@@ -20,6 +20,8 @@
 		<Item Name="logevent.ctl" Type="VI" URL="../DataTypes/logevent.ctl"/>
 		<Item Name="logevent_AppliedSettingsMatchStart.ctl" Type="VI" URL="../DataTypes/logevent_AppliedSettingsMatchStart.ctl"/>
 		<Item Name="logevent_ErrorCode.ctl" Type="VI" URL="../DataTypes/logevent_ErrorCode.ctl"/>
+		<Item Name="logevent_HeartbeatIn.ctl" Type="VI" URL="../DataTypes/logevent_HeartbeatIn.ctl"/>
+		<Item Name="logevent_InternalCommand.ctl" Type="VI" URL="../DataTypes/logevent_InternalCommand.ctl"/>
 		<Item Name="logevent_SettingVersions.ctl" Type="VI" URL="../DataTypes/logevent_SettingVersions.ctl"/>
 		<Item Name="logevent_StateChanged.ctl" Type="VI" URL="../DataTypes/logevent_StateChanged.ctl"/>
 		<Item Name="logevent_SummaryState.ctl" Type="VI" URL="../DataTypes/logevent_SummaryState.ctl"/>
@@ -72,12 +74,16 @@
 	<Item Name="EXA_cancelCallback_logEvent_.vi" Type="VI" URL="../VIs/EXA_cancelCallback_logEvent_.vi"/>
 	<Item Name="EXA_cancelCallback_logEvent_AppliedSettingsMatchStart.vi" Type="VI" URL="../VIs/EXA_cancelCallback_logEvent_AppliedSettingsMatchStart.vi"/>
 	<Item Name="EXA_cancelCallback_logEvent_ErrorCode.vi" Type="VI" URL="../VIs/EXA_cancelCallback_logEvent_ErrorCode.vi"/>
+	<Item Name="EXA_cancelCallback_logEvent_HeartbeatIn.vi" Type="VI" URL="../VIs/EXA_cancelCallback_logEvent_HeartbeatIn.vi"/>
+	<Item Name="EXA_cancelCallback_logEvent_InternalCommand.vi" Type="VI" URL="../VIs/EXA_cancelCallback_logEvent_InternalCommand.vi"/>
 	<Item Name="EXA_cancelCallback_logEvent_SettingVersions.vi" Type="VI" URL="../VIs/EXA_cancelCallback_logEvent_SettingVersions.vi"/>
 	<Item Name="EXA_cancelCallback_logEvent_StateChanged.vi" Type="VI" URL="../VIs/EXA_cancelCallback_logEvent_StateChanged.vi"/>
 	<Item Name="EXA_cancelCallback_logEvent_SummaryState.vi" Type="VI" URL="../VIs/EXA_cancelCallback_logEvent_SummaryState.vi"/>
 	<Item Name="EXA_checkCallbacks.vi" Type="VI" URL="../VIs/EXA_checkCallbacks.vi"/>
 	<Item Name="EXA_getEvent_AppliedSettingsMatchStart.vi" Type="VI" URL="../VIs/EXA_getEvent_AppliedSettingsMatchStart.vi"/>
 	<Item Name="EXA_getEvent_ErrorCode.vi" Type="VI" URL="../VIs/EXA_getEvent_ErrorCode.vi"/>
+	<Item Name="EXA_getEvent_HeartbeatIn.vi" Type="VI" URL="../VIs/EXA_getEvent_HeartbeatIn.vi"/>
+	<Item Name="EXA_getEvent_InternalCommand.vi" Type="VI" URL="../VIs/EXA_getEvent_InternalCommand.vi"/>
 	<Item Name="EXA_getEvent_SettingVersions.vi" Type="VI" URL="../VIs/EXA_getEvent_SettingVersions.vi"/>
 	<Item Name="EXA_getEvent_StateChanged.vi" Type="VI" URL="../VIs/EXA_getEvent_StateChanged.vi"/>
 	<Item Name="EXA_getEvent_SummaryState.vi" Type="VI" URL="../VIs/EXA_getEvent_SummaryState.vi"/>
@@ -105,6 +111,8 @@
 	<Item Name="EXA_issueCommand_stop.vi" Type="VI" URL="../VIs/EXA_issueCommand_stop.vi"/>
 	<Item Name="EXA_logEvent_AppliedSettingsMatchStart.vi" Type="VI" URL="../VIs/EXA_logEvent_AppliedSettingsMatchStart.vi"/>
 	<Item Name="EXA_logEvent_ErrorCode.vi" Type="VI" URL="../VIs/EXA_logEvent_ErrorCode.vi"/>
+	<Item Name="EXA_logEvent_HeartbeatIn.vi" Type="VI" URL="../VIs/EXA_logEvent_HeartbeatIn.vi"/>
+	<Item Name="EXA_logEvent_InternalCommand.vi" Type="VI" URL="../VIs/EXA_logEvent_InternalCommand.vi"/>
 	<Item Name="EXA_logEvent_SettingVersions.vi" Type="VI" URL="../VIs/EXA_logEvent_SettingVersions.vi"/>
 	<Item Name="EXA_logEvent_StateChanged.vi" Type="VI" URL="../VIs/EXA_logEvent_StateChanged.vi"/>
 	<Item Name="EXA_logEvent_SummaryState.vi" Type="VI" URL="../VIs/EXA_logEvent_SummaryState.vi"/>
@@ -135,11 +143,15 @@
 	<Item Name="EXA_registerCallback_logEvent_.vi" Type="VI" URL="../VIs/EXA_registerCallback_logEvent_.vi"/>
 	<Item Name="EXA_registerCallback_logEvent_AppliedSettingsMatchStart.vi" Type="VI" URL="../VIs/EXA_registerCallback_logEvent_AppliedSettingsMatchStart.vi"/>
 	<Item Name="EXA_registerCallback_logEvent_ErrorCode.vi" Type="VI" URL="../VIs/EXA_registerCallback_logEvent_ErrorCode.vi"/>
+	<Item Name="EXA_registerCallback_logEvent_HeartbeatIn.vi" Type="VI" URL="../VIs/EXA_registerCallback_logEvent_HeartbeatIn.vi"/>
+	<Item Name="EXA_registerCallback_logEvent_InternalCommand.vi" Type="VI" URL="../VIs/EXA_registerCallback_logEvent_InternalCommand.vi"/>
 	<Item Name="EXA_registerCallback_logEvent_SettingVersions.vi" Type="VI" URL="../VIs/EXA_registerCallback_logEvent_SettingVersions.vi"/>
 	<Item Name="EXA_registerCallback_logEvent_StateChanged.vi" Type="VI" URL="../VIs/EXA_registerCallback_logEvent_StateChanged.vi"/>
 	<Item Name="EXA_registerCallback_logEvent_SummaryState.vi" Type="VI" URL="../VIs/EXA_registerCallback_logEvent_SummaryState.vi"/>
 	<Item Name="EXA_salEvent_AppliedSettingsMatchStart.vi" Type="VI" URL="../VIs/EXA_salEvent_AppliedSettingsMatchStart.vi"/>
 	<Item Name="EXA_salEvent_ErrorCode.vi" Type="VI" URL="../VIs/EXA_salEvent_ErrorCode.vi"/>
+	<Item Name="EXA_salEvent_HeartbeatIn.vi" Type="VI" URL="../VIs/EXA_salEvent_HeartbeatIn.vi"/>
+	<Item Name="EXA_salEvent_InternalCommand.vi" Type="VI" URL="../VIs/EXA_salEvent_InternalCommand.vi"/>
 	<Item Name="EXA_salEvent_SettingVersions.vi" Type="VI" URL="../VIs/EXA_salEvent_SettingVersions.vi"/>
 	<Item Name="EXA_salEvent_StateChanged.vi" Type="VI" URL="../VIs/EXA_salEvent_StateChanged.vi"/>
 	<Item Name="EXA_salEvent_SummaryState.vi" Type="VI" URL="../VIs/EXA_salEvent_SummaryState.vi"/>
