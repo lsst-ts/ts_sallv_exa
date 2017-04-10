@@ -28,6 +28,7 @@
 		<Item Name="logevent_LoopTimeOutOfRange.ctl" Type="VI" URL="../DataTypes/logevent_LoopTimeOutOfRange.ctl"/>
 		<Item Name="logevent_RejectedCommand.ctl" Type="VI" URL="../DataTypes/logevent_RejectedCommand.ctl"/>
 		<Item Name="logevent_SettingVersions.ctl" Type="VI" URL="../DataTypes/logevent_SettingVersions.ctl"/>
+		<Item Name="logevent_StateChanged.ctl" Type="VI" URL="../DataTypes/logevent_StateChanged.ctl"/>
 		<Item Name="logevent_SummaryState.ctl" Type="VI" URL="../DataTypes/logevent_SummaryState.ctl"/>
 	</Item>
 	<Item Name="EXA_Connect.vi" Type="VI" URL="../VIs/EXA_Connect.vi"/>
@@ -86,6 +87,7 @@
 	<Item Name="EXA_cancelCallback_logEvent_LoopTimeOutOfRange.vi" Type="VI" URL="../VIs/EXA_cancelCallback_logEvent_LoopTimeOutOfRange.vi"/>
 	<Item Name="EXA_cancelCallback_logEvent_RejectedCommand.vi" Type="VI" URL="../VIs/EXA_cancelCallback_logEvent_RejectedCommand.vi"/>
 	<Item Name="EXA_cancelCallback_logEvent_SettingVersions.vi" Type="VI" URL="../VIs/EXA_cancelCallback_logEvent_SettingVersions.vi"/>
+	<Item Name="EXA_cancelCallback_logEvent_StateChanged.vi" Type="VI" URL="../VIs/EXA_cancelCallback_logEvent_StateChanged.vi"/>
 	<Item Name="EXA_cancelCallback_logEvent_SummaryState.vi" Type="VI" URL="../VIs/EXA_cancelCallback_logEvent_SummaryState.vi"/>
 	<Item Name="EXA_checkCallbacks.vi" Type="VI" URL="../VIs/EXA_checkCallbacks.vi"/>
 	<Item Name="EXA_getEvent_AppliedSettingsMatchStart.vi" Type="VI" URL="../VIs/EXA_getEvent_AppliedSettingsMatchStart.vi"/>
@@ -97,6 +99,7 @@
 	<Item Name="EXA_getEvent_LoopTimeOutOfRange.vi" Type="VI" URL="../VIs/EXA_getEvent_LoopTimeOutOfRange.vi"/>
 	<Item Name="EXA_getEvent_RejectedCommand.vi" Type="VI" URL="../VIs/EXA_getEvent_RejectedCommand.vi"/>
 	<Item Name="EXA_getEvent_SettingVersions.vi" Type="VI" URL="../VIs/EXA_getEvent_SettingVersions.vi"/>
+	<Item Name="EXA_getEvent_StateChanged.vi" Type="VI" URL="../VIs/EXA_getEvent_StateChanged.vi"/>
 	<Item Name="EXA_getEvent_SummaryState.vi" Type="VI" URL="../VIs/EXA_getEvent_SummaryState.vi"/>
 	<Item Name="EXA_getNextSample_LoopTimems.vi" Type="VI" URL="../VIs/EXA_getNextSample_LoopTimems.vi"/>
 	<Item Name="EXA_getNextSample_Timestamp.vi" Type="VI" URL="../VIs/EXA_getNextSample_Timestamp.vi"/>
@@ -131,6 +134,7 @@
 	<Item Name="EXA_logEvent_LoopTimeOutOfRange.vi" Type="VI" URL="../VIs/EXA_logEvent_LoopTimeOutOfRange.vi"/>
 	<Item Name="EXA_logEvent_RejectedCommand.vi" Type="VI" URL="../VIs/EXA_logEvent_RejectedCommand.vi"/>
 	<Item Name="EXA_logEvent_SettingVersions.vi" Type="VI" URL="../VIs/EXA_logEvent_SettingVersions.vi"/>
+	<Item Name="EXA_logEvent_StateChanged.vi" Type="VI" URL="../VIs/EXA_logEvent_StateChanged.vi"/>
 	<Item Name="EXA_logEvent_SummaryState.vi" Type="VI" URL="../VIs/EXA_logEvent_SummaryState.vi"/>
 	<Item Name="EXA_putSample_LoopTimems.vi" Type="VI" URL="../VIs/EXA_putSample_LoopTimems.vi"/>
 	<Item Name="EXA_putSample_Timestamp.vi" Type="VI" URL="../VIs/EXA_putSample_Timestamp.vi"/>
@@ -168,6 +172,7 @@
 	<Item Name="EXA_registerCallback_logEvent_LoopTimeOutOfRange.vi" Type="VI" URL="../VIs/EXA_registerCallback_logEvent_LoopTimeOutOfRange.vi"/>
 	<Item Name="EXA_registerCallback_logEvent_RejectedCommand.vi" Type="VI" URL="../VIs/EXA_registerCallback_logEvent_RejectedCommand.vi"/>
 	<Item Name="EXA_registerCallback_logEvent_SettingVersions.vi" Type="VI" URL="../VIs/EXA_registerCallback_logEvent_SettingVersions.vi"/>
+	<Item Name="EXA_registerCallback_logEvent_StateChanged.vi" Type="VI" URL="../VIs/EXA_registerCallback_logEvent_StateChanged.vi"/>
 	<Item Name="EXA_registerCallback_logEvent_SummaryState.vi" Type="VI" URL="../VIs/EXA_registerCallback_logEvent_SummaryState.vi"/>
 	<Item Name="EXA_salEvent_AppliedSettingsMatchStart.vi" Type="VI" URL="../VIs/EXA_salEvent_AppliedSettingsMatchStart.vi"/>
 	<Item Name="EXA_salEvent_DetailedState.vi" Type="VI" URL="../VIs/EXA_salEvent_DetailedState.vi"/>
@@ -178,6 +183,7 @@
 	<Item Name="EXA_salEvent_LoopTimeOutOfRange.vi" Type="VI" URL="../VIs/EXA_salEvent_LoopTimeOutOfRange.vi"/>
 	<Item Name="EXA_salEvent_RejectedCommand.vi" Type="VI" URL="../VIs/EXA_salEvent_RejectedCommand.vi"/>
 	<Item Name="EXA_salEvent_SettingVersions.vi" Type="VI" URL="../VIs/EXA_salEvent_SettingVersions.vi"/>
+	<Item Name="EXA_salEvent_StateChanged.vi" Type="VI" URL="../VIs/EXA_salEvent_StateChanged.vi"/>
 	<Item Name="EXA_salEvent_SummaryState.vi" Type="VI" URL="../VIs/EXA_salEvent_SummaryState.vi"/>
 	<Item Name="EXA_salProcessor_Example.vi" Type="VI" URL="../VIs/EXA_salProcessor_Example.vi"/>
 	<Item Name="EXA_salProcessor_SetValue.vi" Type="VI" URL="../VIs/EXA_salProcessor_SetValue.vi"/>
