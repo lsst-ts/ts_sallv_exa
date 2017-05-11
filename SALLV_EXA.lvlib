@@ -4,11 +4,10 @@
 	<Property Name="NI.Lib.SourceVersion" Type="Int">369131520</Property>
 	<Property Name="NI.Lib.Version" Type="Str">1.0.0.0</Property>
 	<Item Name="DataTypes" Type="Folder">
-		<Item Name="LoopTime_ms.ctl" Type="VI" URL="../DataTypes/LoopTime_ms.ctl"/>
-		<Item Name="Timestamp.ctl" Type="VI" URL="../DataTypes/Timestamp.ctl"/>
+		<Item Name="Summary.ctl" Type="VI" URL="../DataTypes/Summary.ctl"/>
 		<Item Name="ackcmd.ctl" Type="VI" URL="../DataTypes/ackcmd.ctl"/>
 		<Item Name="command.ctl" Type="VI" URL="../DataTypes/command.ctl"/>
-		<Item Name="command_Example.ctl" Type="VI" URL="../DataTypes/command_Example.ctl"/>
+		<Item Name="command_EXAmple.ctl" Type="VI" URL="../DataTypes/command_EXAmple.ctl"/>
 		<Item Name="command_SetValue.ctl" Type="VI" URL="../DataTypes/command_SetValue.ctl"/>
 		<Item Name="command_abort.ctl" Type="VI" URL="../DataTypes/command_abort.ctl"/>
 		<Item Name="command_disable.ctl" Type="VI" URL="../DataTypes/command_disable.ctl"/>
@@ -20,20 +19,167 @@
 		<Item Name="command_stop.ctl" Type="VI" URL="../DataTypes/command_stop.ctl"/>
 		<Item Name="logevent.ctl" Type="VI" URL="../DataTypes/logevent.ctl"/>
 		<Item Name="logevent_AppliedSettingsMatchStart.ctl" Type="VI" URL="../DataTypes/logevent_AppliedSettingsMatchStart.ctl"/>
-		<Item Name="logevent_DetailedState.ctl" Type="VI" URL="../DataTypes/logevent_DetailedState.ctl"/>
 		<Item Name="logevent_ErrorCode.ctl" Type="VI" URL="../DataTypes/logevent_ErrorCode.ctl"/>
-		<Item Name="logevent_Heartbeat.ctl" Type="VI" URL="../DataTypes/logevent_Heartbeat.ctl"/>
 		<Item Name="logevent_HeartbeatIn.ctl" Type="VI" URL="../DataTypes/logevent_HeartbeatIn.ctl"/>
 		<Item Name="logevent_InternalCommand.ctl" Type="VI" URL="../DataTypes/logevent_InternalCommand.ctl"/>
-		<Item Name="logevent_LoopTimeOutOfRange.ctl" Type="VI" URL="../DataTypes/logevent_LoopTimeOutOfRange.ctl"/>
-		<Item Name="logevent_RejectedCommand.ctl" Type="VI" URL="../DataTypes/logevent_RejectedCommand.ctl"/>
 		<Item Name="logevent_SettingVersions.ctl" Type="VI" URL="../DataTypes/logevent_SettingVersions.ctl"/>
 		<Item Name="logevent_StateChanged.ctl" Type="VI" URL="../DataTypes/logevent_StateChanged.ctl"/>
 		<Item Name="logevent_SummaryState.ctl" Type="VI" URL="../DataTypes/logevent_SummaryState.ctl"/>
 	</Item>
+	<Item Name="EXA sal Shm Connect.vi" Type="VI" URL="../VIs/EXA sal Shm Connect.vi"/>
+	<Item Name="EXA sal Shm Release.vi" Type="VI" URL="../VIs/EXA sal Shm Release.vi"/>
+	<Item Name="EXA shm accept Command EX Ample LV.vi" Type="VI" URL="../VIs/EXA shm accept Command EX Ample LV.vi"/>
+	<Item Name="EXA shm accept Command Set Value LV.vi" Type="VI" URL="../VIs/EXA shm accept Command Set Value LV.vi"/>
+	<Item Name="EXA shm accept Command abort LV.vi" Type="VI" URL="../VIs/EXA shm accept Command abort LV.vi"/>
+	<Item Name="EXA shm accept Command disable LV.vi" Type="VI" URL="../VIs/EXA shm accept Command disable LV.vi"/>
+	<Item Name="EXA shm accept Command enable LV.vi" Type="VI" URL="../VIs/EXA shm accept Command enable LV.vi"/>
+	<Item Name="EXA shm accept Command enter Control LV.vi" Type="VI" URL="../VIs/EXA shm accept Command enter Control LV.vi"/>
+	<Item Name="EXA shm accept Command exit Control LV.vi" Type="VI" URL="../VIs/EXA shm accept Command exit Control LV.vi"/>
+	<Item Name="EXA shm accept Command standby LV.vi" Type="VI" URL="../VIs/EXA shm accept Command standby LV.vi"/>
+	<Item Name="EXA shm accept Command start LV.vi" Type="VI" URL="../VIs/EXA shm accept Command start LV.vi"/>
+	<Item Name="EXA shm accept Command stop LV.vi" Type="VI" URL="../VIs/EXA shm accept Command stop LV.vi"/>
+	<Item Name="EXA shm ack Command EX Ample LV.vi" Type="VI" URL="../VIs/EXA shm ack Command EX Ample LV.vi"/>
+	<Item Name="EXA shm ack Command Set Value LV.vi" Type="VI" URL="../VIs/EXA shm ack Command Set Value LV.vi"/>
+	<Item Name="EXA shm ack Command abort LV.vi" Type="VI" URL="../VIs/EXA shm ack Command abort LV.vi"/>
+	<Item Name="EXA shm ack Command disable LV.vi" Type="VI" URL="../VIs/EXA shm ack Command disable LV.vi"/>
+	<Item Name="EXA shm ack Command enable LV.vi" Type="VI" URL="../VIs/EXA shm ack Command enable LV.vi"/>
+	<Item Name="EXA shm ack Command enter Control LV.vi" Type="VI" URL="../VIs/EXA shm ack Command enter Control LV.vi"/>
+	<Item Name="EXA shm ack Command exit Control LV.vi" Type="VI" URL="../VIs/EXA shm ack Command exit Control LV.vi"/>
+	<Item Name="EXA shm ack Command standby LV.vi" Type="VI" URL="../VIs/EXA shm ack Command standby LV.vi"/>
+	<Item Name="EXA shm ack Command start LV.vi" Type="VI" URL="../VIs/EXA shm ack Command start LV.vi"/>
+	<Item Name="EXA shm ack Command stop LV.vi" Type="VI" URL="../VIs/EXA shm ack Command stop LV.vi"/>
+	<Item Name="EXA shm cancel Callback Summary LV.vi" Type="VI" URL="../VIs/EXA shm cancel Callback Summary LV.vi"/>
+	<Item Name="EXA shm cancel Callback ackcmd LV.vi" Type="VI" URL="../VIs/EXA shm cancel Callback ackcmd LV.vi"/>
+	<Item Name="EXA shm cancel Callback command EX Ample LV.vi" Type="VI" URL="../VIs/EXA shm cancel Callback command EX Ample LV.vi"/>
+	<Item Name="EXA shm cancel Callback command EX Ample ackcmd LV.vi" Type="VI" URL="../VIs/EXA shm cancel Callback command EX Ample ackcmd LV.vi"/>
+	<Item Name="EXA shm cancel Callback command LV.vi" Type="VI" URL="../VIs/EXA shm cancel Callback command LV.vi"/>
+	<Item Name="EXA shm cancel Callback command Set Value LV.vi" Type="VI" URL="../VIs/EXA shm cancel Callback command Set Value LV.vi"/>
+	<Item Name="EXA shm cancel Callback command Set Value ackcmd LV.vi" Type="VI" URL="../VIs/EXA shm cancel Callback command Set Value ackcmd LV.vi"/>
+	<Item Name="EXA shm cancel Callback command abort LV.vi" Type="VI" URL="../VIs/EXA shm cancel Callback command abort LV.vi"/>
+	<Item Name="EXA shm cancel Callback command abort ackcmd LV.vi" Type="VI" URL="../VIs/EXA shm cancel Callback command abort ackcmd LV.vi"/>
+	<Item Name="EXA shm cancel Callback command disable LV.vi" Type="VI" URL="../VIs/EXA shm cancel Callback command disable LV.vi"/>
+	<Item Name="EXA shm cancel Callback command disable ackcmd LV.vi" Type="VI" URL="../VIs/EXA shm cancel Callback command disable ackcmd LV.vi"/>
+	<Item Name="EXA shm cancel Callback command enable LV.vi" Type="VI" URL="../VIs/EXA shm cancel Callback command enable LV.vi"/>
+	<Item Name="EXA shm cancel Callback command enable ackcmd LV.vi" Type="VI" URL="../VIs/EXA shm cancel Callback command enable ackcmd LV.vi"/>
+	<Item Name="EXA shm cancel Callback command enter Control LV.vi" Type="VI" URL="../VIs/EXA shm cancel Callback command enter Control LV.vi"/>
+	<Item Name="EXA shm cancel Callback command enter Control ackcmd LV.vi" Type="VI" URL="../VIs/EXA shm cancel Callback command enter Control ackcmd LV.vi"/>
+	<Item Name="EXA shm cancel Callback command exit Control LV.vi" Type="VI" URL="../VIs/EXA shm cancel Callback command exit Control LV.vi"/>
+	<Item Name="EXA shm cancel Callback command exit Control ackcmd LV.vi" Type="VI" URL="../VIs/EXA shm cancel Callback command exit Control ackcmd LV.vi"/>
+	<Item Name="EXA shm cancel Callback command standby LV.vi" Type="VI" URL="../VIs/EXA shm cancel Callback command standby LV.vi"/>
+	<Item Name="EXA shm cancel Callback command standby ackcmd LV.vi" Type="VI" URL="../VIs/EXA shm cancel Callback command standby ackcmd LV.vi"/>
+	<Item Name="EXA shm cancel Callback command start LV.vi" Type="VI" URL="../VIs/EXA shm cancel Callback command start LV.vi"/>
+	<Item Name="EXA shm cancel Callback command start ackcmd LV.vi" Type="VI" URL="../VIs/EXA shm cancel Callback command start ackcmd LV.vi"/>
+	<Item Name="EXA shm cancel Callback command stop LV.vi" Type="VI" URL="../VIs/EXA shm cancel Callback command stop LV.vi"/>
+	<Item Name="EXA shm cancel Callback command stop ackcmd LV.vi" Type="VI" URL="../VIs/EXA shm cancel Callback command stop ackcmd LV.vi"/>
+	<Item Name="EXA shm cancel Callback logevent Applied Settings Match Start LV.vi" Type="VI" URL="../VIs/EXA shm cancel Callback logevent Applied Settings Match Start LV.vi"/>
+	<Item Name="EXA shm cancel Callback logevent Error Code LV.vi" Type="VI" URL="../VIs/EXA shm cancel Callback logevent Error Code LV.vi"/>
+	<Item Name="EXA shm cancel Callback logevent Heartbeat In LV.vi" Type="VI" URL="../VIs/EXA shm cancel Callback logevent Heartbeat In LV.vi"/>
+	<Item Name="EXA shm cancel Callback logevent Internal Command LV.vi" Type="VI" URL="../VIs/EXA shm cancel Callback logevent Internal Command LV.vi"/>
+	<Item Name="EXA shm cancel Callback logevent LV.vi" Type="VI" URL="../VIs/EXA shm cancel Callback logevent LV.vi"/>
+	<Item Name="EXA shm cancel Callback logevent Setting Versions LV.vi" Type="VI" URL="../VIs/EXA shm cancel Callback logevent Setting Versions LV.vi"/>
+	<Item Name="EXA shm cancel Callback logevent State Changed LV.vi" Type="VI" URL="../VIs/EXA shm cancel Callback logevent State Changed LV.vi"/>
+	<Item Name="EXA shm cancel Callback logevent Summary State LV.vi" Type="VI" URL="../VIs/EXA shm cancel Callback logevent Summary State LV.vi"/>
+	<Item Name="EXA shm check Callbacks LV.vi" Type="VI" URL="../VIs/EXA shm check Callbacks LV.vi"/>
+	<Item Name="EXA shm get Event Applied Settings Match Start LV.vi" Type="VI" URL="../VIs/EXA shm get Event Applied Settings Match Start LV.vi"/>
+	<Item Name="EXA shm get Event Error Code LV.vi" Type="VI" URL="../VIs/EXA shm get Event Error Code LV.vi"/>
+	<Item Name="EXA shm get Event Heartbeat In LV.vi" Type="VI" URL="../VIs/EXA shm get Event Heartbeat In LV.vi"/>
+	<Item Name="EXA shm get Event Internal Command LV.vi" Type="VI" URL="../VIs/EXA shm get Event Internal Command LV.vi"/>
+	<Item Name="EXA shm get Event Setting Versions LV.vi" Type="VI" URL="../VIs/EXA shm get Event Setting Versions LV.vi"/>
+	<Item Name="EXA shm get Event State Changed LV.vi" Type="VI" URL="../VIs/EXA shm get Event State Changed LV.vi"/>
+	<Item Name="EXA shm get Event Summary State LV.vi" Type="VI" URL="../VIs/EXA shm get Event Summary State LV.vi"/>
+	<Item Name="EXA shm get Next Sample Summary LV.vi" Type="VI" URL="../VIs/EXA shm get Next Sample Summary LV.vi"/>
+	<Item Name="EXA shm get Response EX Ample LV.vi" Type="VI" URL="../VIs/EXA shm get Response EX Ample LV.vi"/>
+	<Item Name="EXA shm get Response Set Value LV.vi" Type="VI" URL="../VIs/EXA shm get Response Set Value LV.vi"/>
+	<Item Name="EXA shm get Response abort LV.vi" Type="VI" URL="../VIs/EXA shm get Response abort LV.vi"/>
+	<Item Name="EXA shm get Response disable LV.vi" Type="VI" URL="../VIs/EXA shm get Response disable LV.vi"/>
+	<Item Name="EXA shm get Response enable LV.vi" Type="VI" URL="../VIs/EXA shm get Response enable LV.vi"/>
+	<Item Name="EXA shm get Response enter Control LV.vi" Type="VI" URL="../VIs/EXA shm get Response enter Control LV.vi"/>
+	<Item Name="EXA shm get Response exit Control LV.vi" Type="VI" URL="../VIs/EXA shm get Response exit Control LV.vi"/>
+	<Item Name="EXA shm get Response standby LV.vi" Type="VI" URL="../VIs/EXA shm get Response standby LV.vi"/>
+	<Item Name="EXA shm get Response start LV.vi" Type="VI" URL="../VIs/EXA shm get Response start LV.vi"/>
+	<Item Name="EXA shm get Response stop LV.vi" Type="VI" URL="../VIs/EXA shm get Response stop LV.vi"/>
+	<Item Name="EXA shm get Sample Summary LV.vi" Type="VI" URL="../VIs/EXA shm get Sample Summary LV.vi"/>
+	<Item Name="EXA shm init Flags.vi" Type="VI" URL="../VIs/EXA shm init Flags.vi"/>
+	<Item Name="EXA shm issue Command EX Ample LV.vi" Type="VI" URL="../VIs/EXA shm issue Command EX Ample LV.vi"/>
+	<Item Name="EXA shm issue Command Set Value LV.vi" Type="VI" URL="../VIs/EXA shm issue Command Set Value LV.vi"/>
+	<Item Name="EXA shm issue Command abort LV.vi" Type="VI" URL="../VIs/EXA shm issue Command abort LV.vi"/>
+	<Item Name="EXA shm issue Command disable LV.vi" Type="VI" URL="../VIs/EXA shm issue Command disable LV.vi"/>
+	<Item Name="EXA shm issue Command enable LV.vi" Type="VI" URL="../VIs/EXA shm issue Command enable LV.vi"/>
+	<Item Name="EXA shm issue Command enter Control LV.vi" Type="VI" URL="../VIs/EXA shm issue Command enter Control LV.vi"/>
+	<Item Name="EXA shm issue Command exit Control LV.vi" Type="VI" URL="../VIs/EXA shm issue Command exit Control LV.vi"/>
+	<Item Name="EXA shm issue Command standby LV.vi" Type="VI" URL="../VIs/EXA shm issue Command standby LV.vi"/>
+	<Item Name="EXA shm issue Command start LV.vi" Type="VI" URL="../VIs/EXA shm issue Command start LV.vi"/>
+	<Item Name="EXA shm issue Command stop LV.vi" Type="VI" URL="../VIs/EXA shm issue Command stop LV.vi"/>
+	<Item Name="EXA shm log Event Applied Settings Match Start LV.vi" Type="VI" URL="../VIs/EXA shm log Event Applied Settings Match Start LV.vi"/>
+	<Item Name="EXA shm log Event Error Code LV.vi" Type="VI" URL="../VIs/EXA shm log Event Error Code LV.vi"/>
+	<Item Name="EXA shm log Event Heartbeat In LV.vi" Type="VI" URL="../VIs/EXA shm log Event Heartbeat In LV.vi"/>
+	<Item Name="EXA shm log Event Internal Command LV.vi" Type="VI" URL="../VIs/EXA shm log Event Internal Command LV.vi"/>
+	<Item Name="EXA shm log Event Setting Versions LV.vi" Type="VI" URL="../VIs/EXA shm log Event Setting Versions LV.vi"/>
+	<Item Name="EXA shm log Event State Changed LV.vi" Type="VI" URL="../VIs/EXA shm log Event State Changed LV.vi"/>
+	<Item Name="EXA shm log Event Summary State LV.vi" Type="VI" URL="../VIs/EXA shm log Event Summary State LV.vi"/>
+	<Item Name="EXA shm put Sample Summary LV.vi" Type="VI" URL="../VIs/EXA shm put Sample Summary LV.vi"/>
+	<Item Name="EXA shm register Callback Summary LV.vi" Type="VI" URL="../VIs/EXA shm register Callback Summary LV.vi"/>
+	<Item Name="EXA shm register Callback ackcmd LV.vi" Type="VI" URL="../VIs/EXA shm register Callback ackcmd LV.vi"/>
+	<Item Name="EXA shm register Callback command EX Ample LV.vi" Type="VI" URL="../VIs/EXA shm register Callback command EX Ample LV.vi"/>
+	<Item Name="EXA shm register Callback command EX Ample ackcmd LV.vi" Type="VI" URL="../VIs/EXA shm register Callback command EX Ample ackcmd LV.vi"/>
+	<Item Name="EXA shm register Callback command LV.vi" Type="VI" URL="../VIs/EXA shm register Callback command LV.vi"/>
+	<Item Name="EXA shm register Callback command Set Value LV.vi" Type="VI" URL="../VIs/EXA shm register Callback command Set Value LV.vi"/>
+	<Item Name="EXA shm register Callback command Set Value ackcmd LV.vi" Type="VI" URL="../VIs/EXA shm register Callback command Set Value ackcmd LV.vi"/>
+	<Item Name="EXA shm register Callback command abort LV.vi" Type="VI" URL="../VIs/EXA shm register Callback command abort LV.vi"/>
+	<Item Name="EXA shm register Callback command abort ackcmd LV.vi" Type="VI" URL="../VIs/EXA shm register Callback command abort ackcmd LV.vi"/>
+	<Item Name="EXA shm register Callback command disable LV.vi" Type="VI" URL="../VIs/EXA shm register Callback command disable LV.vi"/>
+	<Item Name="EXA shm register Callback command disable ackcmd LV.vi" Type="VI" URL="../VIs/EXA shm register Callback command disable ackcmd LV.vi"/>
+	<Item Name="EXA shm register Callback command enable LV.vi" Type="VI" URL="../VIs/EXA shm register Callback command enable LV.vi"/>
+	<Item Name="EXA shm register Callback command enable ackcmd LV.vi" Type="VI" URL="../VIs/EXA shm register Callback command enable ackcmd LV.vi"/>
+	<Item Name="EXA shm register Callback command enter Control LV.vi" Type="VI" URL="../VIs/EXA shm register Callback command enter Control LV.vi"/>
+	<Item Name="EXA shm register Callback command enter Control ackcmd LV.vi" Type="VI" URL="../VIs/EXA shm register Callback command enter Control ackcmd LV.vi"/>
+	<Item Name="EXA shm register Callback command exit Control LV.vi" Type="VI" URL="../VIs/EXA shm register Callback command exit Control LV.vi"/>
+	<Item Name="EXA shm register Callback command exit Control ackcmd LV.vi" Type="VI" URL="../VIs/EXA shm register Callback command exit Control ackcmd LV.vi"/>
+	<Item Name="EXA shm register Callback command standby LV.vi" Type="VI" URL="../VIs/EXA shm register Callback command standby LV.vi"/>
+	<Item Name="EXA shm register Callback command standby ackcmd LV.vi" Type="VI" URL="../VIs/EXA shm register Callback command standby ackcmd LV.vi"/>
+	<Item Name="EXA shm register Callback command start LV.vi" Type="VI" URL="../VIs/EXA shm register Callback command start LV.vi"/>
+	<Item Name="EXA shm register Callback command start ackcmd LV.vi" Type="VI" URL="../VIs/EXA shm register Callback command start ackcmd LV.vi"/>
+	<Item Name="EXA shm register Callback command stop LV.vi" Type="VI" URL="../VIs/EXA shm register Callback command stop LV.vi"/>
+	<Item Name="EXA shm register Callback command stop ackcmd LV.vi" Type="VI" URL="../VIs/EXA shm register Callback command stop ackcmd LV.vi"/>
+	<Item Name="EXA shm register Callback logevent Applied Settings Match Start LV.vi" Type="VI" URL="../VIs/EXA shm register Callback logevent Applied Settings Match Start LV.vi"/>
+	<Item Name="EXA shm register Callback logevent Error Code LV.vi" Type="VI" URL="../VIs/EXA shm register Callback logevent Error Code LV.vi"/>
+	<Item Name="EXA shm register Callback logevent Heartbeat In LV.vi" Type="VI" URL="../VIs/EXA shm register Callback logevent Heartbeat In LV.vi"/>
+	<Item Name="EXA shm register Callback logevent Internal Command LV.vi" Type="VI" URL="../VIs/EXA shm register Callback logevent Internal Command LV.vi"/>
+	<Item Name="EXA shm register Callback logevent LV.vi" Type="VI" URL="../VIs/EXA shm register Callback logevent LV.vi"/>
+	<Item Name="EXA shm register Callback logevent Setting Versions LV.vi" Type="VI" URL="../VIs/EXA shm register Callback logevent Setting Versions LV.vi"/>
+	<Item Name="EXA shm register Callback logevent State Changed LV.vi" Type="VI" URL="../VIs/EXA shm register Callback logevent State Changed LV.vi"/>
+	<Item Name="EXA shm register Callback logevent Summary State LV.vi" Type="VI" URL="../VIs/EXA shm register Callback logevent Summary State LV.vi"/>
+	<Item Name="EXA shm sal Event Applied Settings Match Start LV.vi" Type="VI" URL="../VIs/EXA shm sal Event Applied Settings Match Start LV.vi"/>
+	<Item Name="EXA shm sal Event Error Code LV.vi" Type="VI" URL="../VIs/EXA shm sal Event Error Code LV.vi"/>
+	<Item Name="EXA shm sal Event Heartbeat In LV.vi" Type="VI" URL="../VIs/EXA shm sal Event Heartbeat In LV.vi"/>
+	<Item Name="EXA shm sal Event Internal Command LV.vi" Type="VI" URL="../VIs/EXA shm sal Event Internal Command LV.vi"/>
+	<Item Name="EXA shm sal Event Setting Versions LV.vi" Type="VI" URL="../VIs/EXA shm sal Event Setting Versions LV.vi"/>
+	<Item Name="EXA shm sal Event State Changed LV.vi" Type="VI" URL="../VIs/EXA shm sal Event State Changed LV.vi"/>
+	<Item Name="EXA shm sal Event Summary State LV.vi" Type="VI" URL="../VIs/EXA shm sal Event Summary State LV.vi"/>
+	<Item Name="EXA shm sal Processor EX Ample LV.vi" Type="VI" URL="../VIs/EXA shm sal Processor EX Ample LV.vi"/>
+	<Item Name="EXA shm sal Processor Set Value LV.vi" Type="VI" URL="../VIs/EXA shm sal Processor Set Value LV.vi"/>
+	<Item Name="EXA shm sal Processor abort LV.vi" Type="VI" URL="../VIs/EXA shm sal Processor abort LV.vi"/>
+	<Item Name="EXA shm sal Processor disable LV.vi" Type="VI" URL="../VIs/EXA shm sal Processor disable LV.vi"/>
+	<Item Name="EXA shm sal Processor enable LV.vi" Type="VI" URL="../VIs/EXA shm sal Processor enable LV.vi"/>
+	<Item Name="EXA shm sal Processor enter Control LV.vi" Type="VI" URL="../VIs/EXA shm sal Processor enter Control LV.vi"/>
+	<Item Name="EXA shm sal Processor exit Control LV.vi" Type="VI" URL="../VIs/EXA shm sal Processor exit Control LV.vi"/>
+	<Item Name="EXA shm sal Processor standby LV.vi" Type="VI" URL="../VIs/EXA shm sal Processor standby LV.vi"/>
+	<Item Name="EXA shm sal Processor start LV.vi" Type="VI" URL="../VIs/EXA shm sal Processor start LV.vi"/>
+	<Item Name="EXA shm sal Processor stop LV.vi" Type="VI" URL="../VIs/EXA shm sal Processor stop LV.vi"/>
+	<Item Name="EXA shm sal Telemetry Sub Summary LV.vi" Type="VI" URL="../VIs/EXA shm sal Telemetry Sub Summary LV.vi"/>
+	<Item Name="EXA shm wait For Completion EX Ample LV.vi" Type="VI" URL="../VIs/EXA shm wait For Completion EX Ample LV.vi"/>
+	<Item Name="EXA shm wait For Completion Set Value LV.vi" Type="VI" URL="../VIs/EXA shm wait For Completion Set Value LV.vi"/>
+	<Item Name="EXA shm wait For Completion abort LV.vi" Type="VI" URL="../VIs/EXA shm wait For Completion abort LV.vi"/>
+	<Item Name="EXA shm wait For Completion disable LV.vi" Type="VI" URL="../VIs/EXA shm wait For Completion disable LV.vi"/>
+	<Item Name="EXA shm wait For Completion enable LV.vi" Type="VI" URL="../VIs/EXA shm wait For Completion enable LV.vi"/>
+	<Item Name="EXA shm wait For Completion enter Control LV.vi" Type="VI" URL="../VIs/EXA shm wait For Completion enter Control LV.vi"/>
+	<Item Name="EXA shm wait For Completion exit Control LV.vi" Type="VI" URL="../VIs/EXA shm wait For Completion exit Control LV.vi"/>
+	<Item Name="EXA shm wait For Completion standby LV.vi" Type="VI" URL="../VIs/EXA shm wait For Completion standby LV.vi"/>
+	<Item Name="EXA shm wait For Completion start LV.vi" Type="VI" URL="../VIs/EXA shm wait For Completion start LV.vi"/>
+	<Item Name="EXA shm wait For Completion stop LV.vi" Type="VI" URL="../VIs/EXA shm wait For Completion stop LV.vi"/>
 	<Item Name="EXA_Connect.vi" Type="VI" URL="../VIs/EXA_Connect.vi"/>
 	<Item Name="EXA_Release.vi" Type="VI" URL="../VIs/EXA_Release.vi"/>
-	<Item Name="EXA_acceptCommand_Example.vi" Type="VI" URL="../VIs/EXA_acceptCommand_Example.vi"/>
+	<Item Name="EXA_acceptCommand_EXAmple.vi" Type="VI" URL="../VIs/EXA_acceptCommand_EXAmple.vi"/>
 	<Item Name="EXA_acceptCommand_SetValue.vi" Type="VI" URL="../VIs/EXA_acceptCommand_SetValue.vi"/>
 	<Item Name="EXA_acceptCommand_abort.vi" Type="VI" URL="../VIs/EXA_acceptCommand_abort.vi"/>
 	<Item Name="EXA_acceptCommand_disable.vi" Type="VI" URL="../VIs/EXA_acceptCommand_disable.vi"/>
@@ -43,7 +189,7 @@
 	<Item Name="EXA_acceptCommand_standby.vi" Type="VI" URL="../VIs/EXA_acceptCommand_standby.vi"/>
 	<Item Name="EXA_acceptCommand_start.vi" Type="VI" URL="../VIs/EXA_acceptCommand_start.vi"/>
 	<Item Name="EXA_acceptCommand_stop.vi" Type="VI" URL="../VIs/EXA_acceptCommand_stop.vi"/>
-	<Item Name="EXA_ackCommand_Example.vi" Type="VI" URL="../VIs/EXA_ackCommand_Example.vi"/>
+	<Item Name="EXA_ackCommand_EXAmple.vi" Type="VI" URL="../VIs/EXA_ackCommand_EXAmple.vi"/>
 	<Item Name="EXA_ackCommand_SetValue.vi" Type="VI" URL="../VIs/EXA_ackCommand_SetValue.vi"/>
 	<Item Name="EXA_ackCommand_abort.vi" Type="VI" URL="../VIs/EXA_ackCommand_abort.vi"/>
 	<Item Name="EXA_ackCommand_disable.vi" Type="VI" URL="../VIs/EXA_ackCommand_disable.vi"/>
@@ -53,12 +199,11 @@
 	<Item Name="EXA_ackCommand_standby.vi" Type="VI" URL="../VIs/EXA_ackCommand_standby.vi"/>
 	<Item Name="EXA_ackCommand_start.vi" Type="VI" URL="../VIs/EXA_ackCommand_start.vi"/>
 	<Item Name="EXA_ackCommand_stop.vi" Type="VI" URL="../VIs/EXA_ackCommand_stop.vi"/>
-	<Item Name="EXA_cancelCallback_LoopTimems.vi" Type="VI" URL="../VIs/EXA_cancelCallback_LoopTimems.vi"/>
-	<Item Name="EXA_cancelCallback_Timestamp.vi" Type="VI" URL="../VIs/EXA_cancelCallback_Timestamp.vi"/>
+	<Item Name="EXA_cancelCallback_Summary.vi" Type="VI" URL="../VIs/EXA_cancelCallback_Summary.vi"/>
 	<Item Name="EXA_cancelCallback_ackcmd.vi" Type="VI" URL="../VIs/EXA_cancelCallback_ackcmd.vi"/>
 	<Item Name="EXA_cancelCallback_command_.vi" Type="VI" URL="../VIs/EXA_cancelCallback_command_.vi"/>
-	<Item Name="EXA_cancelCallback_command_Example.vi" Type="VI" URL="../VIs/EXA_cancelCallback_command_Example.vi"/>
-	<Item Name="EXA_cancelCallback_command_Exampleackcmd.vi" Type="VI" URL="../VIs/EXA_cancelCallback_command_Exampleackcmd.vi"/>
+	<Item Name="EXA_cancelCallback_command_EXAmple.vi" Type="VI" URL="../VIs/EXA_cancelCallback_command_EXAmple.vi"/>
+	<Item Name="EXA_cancelCallback_command_EXAmpleackcmd.vi" Type="VI" URL="../VIs/EXA_cancelCallback_command_EXAmpleackcmd.vi"/>
 	<Item Name="EXA_cancelCallback_command_SetValue.vi" Type="VI" URL="../VIs/EXA_cancelCallback_command_SetValue.vi"/>
 	<Item Name="EXA_cancelCallback_command_SetValueackcmd.vi" Type="VI" URL="../VIs/EXA_cancelCallback_command_SetValueackcmd.vi"/>
 	<Item Name="EXA_cancelCallback_command_abort.vi" Type="VI" URL="../VIs/EXA_cancelCallback_command_abort.vi"/>
@@ -79,31 +224,22 @@
 	<Item Name="EXA_cancelCallback_command_stopackcmd.vi" Type="VI" URL="../VIs/EXA_cancelCallback_command_stopackcmd.vi"/>
 	<Item Name="EXA_cancelCallback_logEvent_.vi" Type="VI" URL="../VIs/EXA_cancelCallback_logEvent_.vi"/>
 	<Item Name="EXA_cancelCallback_logEvent_AppliedSettingsMatchStart.vi" Type="VI" URL="../VIs/EXA_cancelCallback_logEvent_AppliedSettingsMatchStart.vi"/>
-	<Item Name="EXA_cancelCallback_logEvent_DetailedState.vi" Type="VI" URL="../VIs/EXA_cancelCallback_logEvent_DetailedState.vi"/>
 	<Item Name="EXA_cancelCallback_logEvent_ErrorCode.vi" Type="VI" URL="../VIs/EXA_cancelCallback_logEvent_ErrorCode.vi"/>
-	<Item Name="EXA_cancelCallback_logEvent_Heartbeat.vi" Type="VI" URL="../VIs/EXA_cancelCallback_logEvent_Heartbeat.vi"/>
 	<Item Name="EXA_cancelCallback_logEvent_HeartbeatIn.vi" Type="VI" URL="../VIs/EXA_cancelCallback_logEvent_HeartbeatIn.vi"/>
 	<Item Name="EXA_cancelCallback_logEvent_InternalCommand.vi" Type="VI" URL="../VIs/EXA_cancelCallback_logEvent_InternalCommand.vi"/>
-	<Item Name="EXA_cancelCallback_logEvent_LoopTimeOutOfRange.vi" Type="VI" URL="../VIs/EXA_cancelCallback_logEvent_LoopTimeOutOfRange.vi"/>
-	<Item Name="EXA_cancelCallback_logEvent_RejectedCommand.vi" Type="VI" URL="../VIs/EXA_cancelCallback_logEvent_RejectedCommand.vi"/>
 	<Item Name="EXA_cancelCallback_logEvent_SettingVersions.vi" Type="VI" URL="../VIs/EXA_cancelCallback_logEvent_SettingVersions.vi"/>
 	<Item Name="EXA_cancelCallback_logEvent_StateChanged.vi" Type="VI" URL="../VIs/EXA_cancelCallback_logEvent_StateChanged.vi"/>
 	<Item Name="EXA_cancelCallback_logEvent_SummaryState.vi" Type="VI" URL="../VIs/EXA_cancelCallback_logEvent_SummaryState.vi"/>
 	<Item Name="EXA_checkCallbacks.vi" Type="VI" URL="../VIs/EXA_checkCallbacks.vi"/>
 	<Item Name="EXA_getEvent_AppliedSettingsMatchStart.vi" Type="VI" URL="../VIs/EXA_getEvent_AppliedSettingsMatchStart.vi"/>
-	<Item Name="EXA_getEvent_DetailedState.vi" Type="VI" URL="../VIs/EXA_getEvent_DetailedState.vi"/>
 	<Item Name="EXA_getEvent_ErrorCode.vi" Type="VI" URL="../VIs/EXA_getEvent_ErrorCode.vi"/>
-	<Item Name="EXA_getEvent_Heartbeat.vi" Type="VI" URL="../VIs/EXA_getEvent_Heartbeat.vi"/>
 	<Item Name="EXA_getEvent_HeartbeatIn.vi" Type="VI" URL="../VIs/EXA_getEvent_HeartbeatIn.vi"/>
 	<Item Name="EXA_getEvent_InternalCommand.vi" Type="VI" URL="../VIs/EXA_getEvent_InternalCommand.vi"/>
-	<Item Name="EXA_getEvent_LoopTimeOutOfRange.vi" Type="VI" URL="../VIs/EXA_getEvent_LoopTimeOutOfRange.vi"/>
-	<Item Name="EXA_getEvent_RejectedCommand.vi" Type="VI" URL="../VIs/EXA_getEvent_RejectedCommand.vi"/>
 	<Item Name="EXA_getEvent_SettingVersions.vi" Type="VI" URL="../VIs/EXA_getEvent_SettingVersions.vi"/>
 	<Item Name="EXA_getEvent_StateChanged.vi" Type="VI" URL="../VIs/EXA_getEvent_StateChanged.vi"/>
 	<Item Name="EXA_getEvent_SummaryState.vi" Type="VI" URL="../VIs/EXA_getEvent_SummaryState.vi"/>
-	<Item Name="EXA_getNextSample_LoopTimems.vi" Type="VI" URL="../VIs/EXA_getNextSample_LoopTimems.vi"/>
-	<Item Name="EXA_getNextSample_Timestamp.vi" Type="VI" URL="../VIs/EXA_getNextSample_Timestamp.vi"/>
-	<Item Name="EXA_getResponse_Example.vi" Type="VI" URL="../VIs/EXA_getResponse_Example.vi"/>
+	<Item Name="EXA_getNextSample_Summary.vi" Type="VI" URL="../VIs/EXA_getNextSample_Summary.vi"/>
+	<Item Name="EXA_getResponse_EXAmple.vi" Type="VI" URL="../VIs/EXA_getResponse_EXAmple.vi"/>
 	<Item Name="EXA_getResponse_SetValue.vi" Type="VI" URL="../VIs/EXA_getResponse_SetValue.vi"/>
 	<Item Name="EXA_getResponse_abort.vi" Type="VI" URL="../VIs/EXA_getResponse_abort.vi"/>
 	<Item Name="EXA_getResponse_disable.vi" Type="VI" URL="../VIs/EXA_getResponse_disable.vi"/>
@@ -113,9 +249,8 @@
 	<Item Name="EXA_getResponse_standby.vi" Type="VI" URL="../VIs/EXA_getResponse_standby.vi"/>
 	<Item Name="EXA_getResponse_start.vi" Type="VI" URL="../VIs/EXA_getResponse_start.vi"/>
 	<Item Name="EXA_getResponse_stop.vi" Type="VI" URL="../VIs/EXA_getResponse_stop.vi"/>
-	<Item Name="EXA_getSample_LoopTimems.vi" Type="VI" URL="../VIs/EXA_getSample_LoopTimems.vi"/>
-	<Item Name="EXA_getSample_Timestamp.vi" Type="VI" URL="../VIs/EXA_getSample_Timestamp.vi"/>
-	<Item Name="EXA_issueCommand_Example.vi" Type="VI" URL="../VIs/EXA_issueCommand_Example.vi"/>
+	<Item Name="EXA_getSample_Summary.vi" Type="VI" URL="../VIs/EXA_getSample_Summary.vi"/>
+	<Item Name="EXA_issueCommand_EXAmple.vi" Type="VI" URL="../VIs/EXA_issueCommand_EXAmple.vi"/>
 	<Item Name="EXA_issueCommand_SetValue.vi" Type="VI" URL="../VIs/EXA_issueCommand_SetValue.vi"/>
 	<Item Name="EXA_issueCommand_abort.vi" Type="VI" URL="../VIs/EXA_issueCommand_abort.vi"/>
 	<Item Name="EXA_issueCommand_disable.vi" Type="VI" URL="../VIs/EXA_issueCommand_disable.vi"/>
@@ -126,24 +261,18 @@
 	<Item Name="EXA_issueCommand_start.vi" Type="VI" URL="../VIs/EXA_issueCommand_start.vi"/>
 	<Item Name="EXA_issueCommand_stop.vi" Type="VI" URL="../VIs/EXA_issueCommand_stop.vi"/>
 	<Item Name="EXA_logEvent_AppliedSettingsMatchStart.vi" Type="VI" URL="../VIs/EXA_logEvent_AppliedSettingsMatchStart.vi"/>
-	<Item Name="EXA_logEvent_DetailedState.vi" Type="VI" URL="../VIs/EXA_logEvent_DetailedState.vi"/>
 	<Item Name="EXA_logEvent_ErrorCode.vi" Type="VI" URL="../VIs/EXA_logEvent_ErrorCode.vi"/>
-	<Item Name="EXA_logEvent_Heartbeat.vi" Type="VI" URL="../VIs/EXA_logEvent_Heartbeat.vi"/>
 	<Item Name="EXA_logEvent_HeartbeatIn.vi" Type="VI" URL="../VIs/EXA_logEvent_HeartbeatIn.vi"/>
 	<Item Name="EXA_logEvent_InternalCommand.vi" Type="VI" URL="../VIs/EXA_logEvent_InternalCommand.vi"/>
-	<Item Name="EXA_logEvent_LoopTimeOutOfRange.vi" Type="VI" URL="../VIs/EXA_logEvent_LoopTimeOutOfRange.vi"/>
-	<Item Name="EXA_logEvent_RejectedCommand.vi" Type="VI" URL="../VIs/EXA_logEvent_RejectedCommand.vi"/>
 	<Item Name="EXA_logEvent_SettingVersions.vi" Type="VI" URL="../VIs/EXA_logEvent_SettingVersions.vi"/>
 	<Item Name="EXA_logEvent_StateChanged.vi" Type="VI" URL="../VIs/EXA_logEvent_StateChanged.vi"/>
 	<Item Name="EXA_logEvent_SummaryState.vi" Type="VI" URL="../VIs/EXA_logEvent_SummaryState.vi"/>
-	<Item Name="EXA_putSample_LoopTimems.vi" Type="VI" URL="../VIs/EXA_putSample_LoopTimems.vi"/>
-	<Item Name="EXA_putSample_Timestamp.vi" Type="VI" URL="../VIs/EXA_putSample_Timestamp.vi"/>
-	<Item Name="EXA_registerCallback_LoopTimems.vi" Type="VI" URL="../VIs/EXA_registerCallback_LoopTimems.vi"/>
-	<Item Name="EXA_registerCallback_Timestamp.vi" Type="VI" URL="../VIs/EXA_registerCallback_Timestamp.vi"/>
+	<Item Name="EXA_putSample_Summary.vi" Type="VI" URL="../VIs/EXA_putSample_Summary.vi"/>
+	<Item Name="EXA_registerCallback_Summary.vi" Type="VI" URL="../VIs/EXA_registerCallback_Summary.vi"/>
 	<Item Name="EXA_registerCallback_ackcmd.vi" Type="VI" URL="../VIs/EXA_registerCallback_ackcmd.vi"/>
 	<Item Name="EXA_registerCallback_command_.vi" Type="VI" URL="../VIs/EXA_registerCallback_command_.vi"/>
-	<Item Name="EXA_registerCallback_command_Example.vi" Type="VI" URL="../VIs/EXA_registerCallback_command_Example.vi"/>
-	<Item Name="EXA_registerCallback_command_Exampleackcmd.vi" Type="VI" URL="../VIs/EXA_registerCallback_command_Exampleackcmd.vi"/>
+	<Item Name="EXA_registerCallback_command_EXAmple.vi" Type="VI" URL="../VIs/EXA_registerCallback_command_EXAmple.vi"/>
+	<Item Name="EXA_registerCallback_command_EXAmpleackcmd.vi" Type="VI" URL="../VIs/EXA_registerCallback_command_EXAmpleackcmd.vi"/>
 	<Item Name="EXA_registerCallback_command_SetValue.vi" Type="VI" URL="../VIs/EXA_registerCallback_command_SetValue.vi"/>
 	<Item Name="EXA_registerCallback_command_SetValueackcmd.vi" Type="VI" URL="../VIs/EXA_registerCallback_command_SetValueackcmd.vi"/>
 	<Item Name="EXA_registerCallback_command_abort.vi" Type="VI" URL="../VIs/EXA_registerCallback_command_abort.vi"/>
@@ -164,28 +293,20 @@
 	<Item Name="EXA_registerCallback_command_stopackcmd.vi" Type="VI" URL="../VIs/EXA_registerCallback_command_stopackcmd.vi"/>
 	<Item Name="EXA_registerCallback_logEvent_.vi" Type="VI" URL="../VIs/EXA_registerCallback_logEvent_.vi"/>
 	<Item Name="EXA_registerCallback_logEvent_AppliedSettingsMatchStart.vi" Type="VI" URL="../VIs/EXA_registerCallback_logEvent_AppliedSettingsMatchStart.vi"/>
-	<Item Name="EXA_registerCallback_logEvent_DetailedState.vi" Type="VI" URL="../VIs/EXA_registerCallback_logEvent_DetailedState.vi"/>
 	<Item Name="EXA_registerCallback_logEvent_ErrorCode.vi" Type="VI" URL="../VIs/EXA_registerCallback_logEvent_ErrorCode.vi"/>
-	<Item Name="EXA_registerCallback_logEvent_Heartbeat.vi" Type="VI" URL="../VIs/EXA_registerCallback_logEvent_Heartbeat.vi"/>
 	<Item Name="EXA_registerCallback_logEvent_HeartbeatIn.vi" Type="VI" URL="../VIs/EXA_registerCallback_logEvent_HeartbeatIn.vi"/>
 	<Item Name="EXA_registerCallback_logEvent_InternalCommand.vi" Type="VI" URL="../VIs/EXA_registerCallback_logEvent_InternalCommand.vi"/>
-	<Item Name="EXA_registerCallback_logEvent_LoopTimeOutOfRange.vi" Type="VI" URL="../VIs/EXA_registerCallback_logEvent_LoopTimeOutOfRange.vi"/>
-	<Item Name="EXA_registerCallback_logEvent_RejectedCommand.vi" Type="VI" URL="../VIs/EXA_registerCallback_logEvent_RejectedCommand.vi"/>
 	<Item Name="EXA_registerCallback_logEvent_SettingVersions.vi" Type="VI" URL="../VIs/EXA_registerCallback_logEvent_SettingVersions.vi"/>
 	<Item Name="EXA_registerCallback_logEvent_StateChanged.vi" Type="VI" URL="../VIs/EXA_registerCallback_logEvent_StateChanged.vi"/>
 	<Item Name="EXA_registerCallback_logEvent_SummaryState.vi" Type="VI" URL="../VIs/EXA_registerCallback_logEvent_SummaryState.vi"/>
 	<Item Name="EXA_salEvent_AppliedSettingsMatchStart.vi" Type="VI" URL="../VIs/EXA_salEvent_AppliedSettingsMatchStart.vi"/>
-	<Item Name="EXA_salEvent_DetailedState.vi" Type="VI" URL="../VIs/EXA_salEvent_DetailedState.vi"/>
 	<Item Name="EXA_salEvent_ErrorCode.vi" Type="VI" URL="../VIs/EXA_salEvent_ErrorCode.vi"/>
-	<Item Name="EXA_salEvent_Heartbeat.vi" Type="VI" URL="../VIs/EXA_salEvent_Heartbeat.vi"/>
 	<Item Name="EXA_salEvent_HeartbeatIn.vi" Type="VI" URL="../VIs/EXA_salEvent_HeartbeatIn.vi"/>
 	<Item Name="EXA_salEvent_InternalCommand.vi" Type="VI" URL="../VIs/EXA_salEvent_InternalCommand.vi"/>
-	<Item Name="EXA_salEvent_LoopTimeOutOfRange.vi" Type="VI" URL="../VIs/EXA_salEvent_LoopTimeOutOfRange.vi"/>
-	<Item Name="EXA_salEvent_RejectedCommand.vi" Type="VI" URL="../VIs/EXA_salEvent_RejectedCommand.vi"/>
 	<Item Name="EXA_salEvent_SettingVersions.vi" Type="VI" URL="../VIs/EXA_salEvent_SettingVersions.vi"/>
 	<Item Name="EXA_salEvent_StateChanged.vi" Type="VI" URL="../VIs/EXA_salEvent_StateChanged.vi"/>
 	<Item Name="EXA_salEvent_SummaryState.vi" Type="VI" URL="../VIs/EXA_salEvent_SummaryState.vi"/>
-	<Item Name="EXA_salProcessor_Example.vi" Type="VI" URL="../VIs/EXA_salProcessor_Example.vi"/>
+	<Item Name="EXA_salProcessor_EXAmple.vi" Type="VI" URL="../VIs/EXA_salProcessor_EXAmple.vi"/>
 	<Item Name="EXA_salProcessor_SetValue.vi" Type="VI" URL="../VIs/EXA_salProcessor_SetValue.vi"/>
 	<Item Name="EXA_salProcessor_abort.vi" Type="VI" URL="../VIs/EXA_salProcessor_abort.vi"/>
 	<Item Name="EXA_salProcessor_disable.vi" Type="VI" URL="../VIs/EXA_salProcessor_disable.vi"/>
@@ -195,9 +316,8 @@
 	<Item Name="EXA_salProcessor_standby.vi" Type="VI" URL="../VIs/EXA_salProcessor_standby.vi"/>
 	<Item Name="EXA_salProcessor_start.vi" Type="VI" URL="../VIs/EXA_salProcessor_start.vi"/>
 	<Item Name="EXA_salProcessor_stop.vi" Type="VI" URL="../VIs/EXA_salProcessor_stop.vi"/>
-	<Item Name="EXA_salTelemetrySub_LoopTimems.vi" Type="VI" URL="../VIs/EXA_salTelemetrySub_LoopTimems.vi"/>
-	<Item Name="EXA_salTelemetrySub_Timestamp.vi" Type="VI" URL="../VIs/EXA_salTelemetrySub_Timestamp.vi"/>
-	<Item Name="EXA_waitForCompletion_Example.vi" Type="VI" URL="../VIs/EXA_waitForCompletion_Example.vi"/>
+	<Item Name="EXA_salTelemetrySub_Summary.vi" Type="VI" URL="../VIs/EXA_salTelemetrySub_Summary.vi"/>
+	<Item Name="EXA_waitForCompletion_EXAmple.vi" Type="VI" URL="../VIs/EXA_waitForCompletion_EXAmple.vi"/>
 	<Item Name="EXA_waitForCompletion_SetValue.vi" Type="VI" URL="../VIs/EXA_waitForCompletion_SetValue.vi"/>
 	<Item Name="EXA_waitForCompletion_abort.vi" Type="VI" URL="../VIs/EXA_waitForCompletion_abort.vi"/>
 	<Item Name="EXA_waitForCompletion_disable.vi" Type="VI" URL="../VIs/EXA_waitForCompletion_disable.vi"/>
