@@ -31,6 +31,9 @@
 		<Item Name="logevent_StateChanged.ctl" Type="VI" URL="../DataTypes/logevent_StateChanged.ctl"/>
 		<Item Name="logevent_SummaryState.ctl" Type="VI" URL="../DataTypes/logevent_SummaryState.ctl"/>
 	</Item>
+	<Item Name="subvi" Type="Folder">
+		<Item Name="ErrorConverter(ErrCodeorStatus).vi" Type="VI" URL="../subvi/ErrorConverter(ErrCodeorStatus).vi"/>
+	</Item>
 	<Item Name="EXA_Connect.vi" Type="VI" URL="../VIs/EXA_Connect.vi"/>
 	<Item Name="EXA_Release.vi" Type="VI" URL="../VIs/EXA_Release.vi"/>
 	<Item Name="EXA_acceptCommand_Example.vi" Type="VI" URL="../VIs/EXA_acceptCommand_Example.vi"/>
@@ -207,6 +210,7 @@
 	<Item Name="EXA_waitForCompletion_standby.vi" Type="VI" URL="../VIs/EXA_waitForCompletion_standby.vi"/>
 	<Item Name="EXA_waitForCompletion_start.vi" Type="VI" URL="../VIs/EXA_waitForCompletion_start.vi"/>
 	<Item Name="EXA_waitForCompletion_stop.vi" Type="VI" URL="../VIs/EXA_waitForCompletion_stop.vi"/>
+	<Item Name="EXAgetCurrentTime.vi" Type="VI" URL="../VIs/EXAgetCurrentTime.vi"/>
 	<Item Name="EXAshminitFlags.vi" Type="VI" URL="../VIs/EXAshminitFlags.vi"/>
 	<Item Name="SALLV_EXA.so" Type="Document" URL="../SALLV_EXA.so"/>
 </Library>
