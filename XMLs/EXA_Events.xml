@@ -210,6 +210,14 @@
         <Explanation>http://sal.lsst.org</Explanation>
     </item>
     <item>
+        <EFDB_Name>recommendedSettingsLabels</EFDB_Name>
+        <Description></Description>
+        <IDL_Type>string</IDL_Type>
+        <Units></Units>
+        <Count>1</Count>
+        <Explanation>http://sal.lsst.org</Explanation>
+    </item>
+    <item>
         <EFDB_Name>timestamp</EFDB_Name>
         <Description>The timestamp for when the event occurred.</Description>
         <IDL_Type>double</IDL_Type>
