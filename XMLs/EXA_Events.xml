@@ -15,15 +15,6 @@
         <IDL_Type>boolean</IDL_Type>
         <Units></Units>
         <Count>1</Count>
-        <Explanation>http://sal.lsst.org</Explanation>
-    </item>
-    <item>
-        <EFDB_Name>timestamp</EFDB_Name>
-        <Description>The timestamp for when the event occurred.</Description>
-        <IDL_Type>double</IDL_Type>
-        <Units>Seconds</Units>
-        <Count>1</Count>
-        <Explanation>http://sal.lsst.org</Explanation>
     </item>
 </SALEvent>
 <SALEvent>
@@ -39,15 +30,14 @@
         <IDL_Type>unsigned short</IDL_Type>
         <Units></Units>
         <Count>1</Count>
-        <Explanation>http://sal.lsst.org</Explanation>
     </item>
     <item>
         <EFDB_Name>detailedState</EFDB_Name>
         <Description></Description>
-        <IDL_Type>unsigned short</IDL_Type>
+        <IDL_Type>short</IDL_Type>
+        <Enumeration>DisabledState,EnabledState,FaultState,OfflineState,StandbyState</Enumeration>
         <Units></Units>
         <Count>1</Count>
-        <Explanation>http://sal.lsst.org</Explanation>
     </item>
     <item>
         <EFDB_Name>timestamp</EFDB_Name>
@@ -55,31 +45,6 @@
         <IDL_Type>double</IDL_Type>
         <Units></Units>
         <Count>1</Count>
-        <Explanation>http://sal.lsst.org</Explanation>
-    </item>
-</SALEvent>
-<SALEvent>
-    <Subsystem>EXA</Subsystem>
-    <Version>3.5.1</Version>
-    <Author>ccontaxis</Author>
-    <EFDB_Topic>EXA_logevent_SettingsApplied</EFDB_Topic>
-    <Alias>SettingsApplied</Alias>
-    <Explanation>http://sal.lsst.org</Explanation>
-    <item>
-        <EFDB_Name>settings</EFDB_Name>
-        <Description></Description>
-        <IDL_Type>string</IDL_Type>
-        <Units></Units>
-        <Count>1</Count>
-        <Explanation>http://sal.lsst.org</Explanation>
-    </item>
-    <item>
-        <EFDB_Name>timestamp</EFDB_Name>
-        <Description>The timestamp for when the event occurred.</Description>
-        <IDL_Type>double</IDL_Type>
-        <Units>Seconds</Units>
-        <Count>1</Count>
-        <Explanation>http://sal.lsst.org</Explanation>
     </item>
 </SALEvent>
 <SALEvent>
@@ -92,10 +57,10 @@
     <item>
         <EFDB_Name>detailedState</EFDB_Name>
         <Description>An enumeration indicating the subsystem detailed state. See the DetailedStateValue enumeration defined in the Typedefs package.</Description>
-        <IDL_Type>unsigned short</IDL_Type>
+        <IDL_Type>short</IDL_Type>
+        <Enumeration>DisabledState,EnabledState,FaultState,OfflineState,StandbyState</Enumeration>
         <Units></Units>
         <Count>1</Count>
-        <Explanation>http://sal.lsst.org</Explanation>
     </item>
 </SALEvent>
 <SALEvent>
@@ -111,7 +76,6 @@
         <IDL_Type>byte</IDL_Type>
         <Units></Units>
         <Count>1000</Count>
-        <Explanation>http://sal.lsst.org</Explanation>
     </item>
 </SALEvent>
 <SALEvent>
@@ -127,13 +91,12 @@
         <IDL_Type>boolean</IDL_Type>
         <Units></Units>
         <Count>1</Count>
-        <Explanation>http://sal.lsst.org</Explanation>
     </item>
 </SALEvent>
 <SALEvent>
     <Subsystem>EXA</Subsystem>
     <Version>3.5.1</Version>
-    <Author>aanania</Author>
+    <Author>ccontaxis</Author>
     <EFDB_Topic>EXA_logevent_SummaryState</EFDB_Topic>
     <Alias>SummaryState</Alias>
     <Explanation>http://sal.lsst.org</Explanation>
@@ -141,17 +104,9 @@
         <EFDB_Name>summaryState</EFDB_Name>
         <Description>An enumeration indicating the subsystem summary state. See the SummaryStateValue enumeration defined in the Typedefs package.</Description>
         <IDL_Type>short</IDL_Type>
+        <Enumeration>OfflineState,StandbyState,DisabledState,EnabledState,FaultState</Enumeration>
         <Units></Units>
-        <Enumeration>ENABLED, DISABLED, STANDBY, OFFLINE, FAULT</Enumeration>
         <Count>1</Count>
-    </item>
-    <item>
-        <EFDB_Name>timestamp</EFDB_Name>
-        <Description>The timestamp for when the event occurred.</Description>
-        <IDL_Type>double</IDL_Type>
-        <Units>Seconds</Units>
-        <Count>1</Count>
-        <Explanation>http://sal.lsst.org</Explanation>
     </item>
 </SALEvent>
 <SALEvent>
@@ -167,15 +122,6 @@
         <IDL_Type>long</IDL_Type>
         <Units></Units>
         <Count>1</Count>
-        <Explanation>http://sal.lsst.org</Explanation>
-    </item>
-    <item>
-        <EFDB_Name>timestamp</EFDB_Name>
-        <Description>The timestamp for when the event occurred.</Description>
-        <IDL_Type>double</IDL_Type>
-        <Units>Seconds</Units>
-        <Count>1</Count>
-        <Explanation>http://sal.lsst.org</Explanation>
     </item>
 </SALEvent>
 <SALEvent>
@@ -191,7 +137,6 @@
         <IDL_Type>boolean</IDL_Type>
         <Units></Units>
         <Count>1</Count>
-        <Explanation>http://sal.lsst.org</Explanation>
     </item>
 </SALEvent>
 <SALEvent>
@@ -202,27 +147,19 @@
     <Alias>SettingVersions</Alias>
     <Explanation>http://sal.lsst.org</Explanation>
     <item>
-        <EFDB_Name>recommendedSettingsVersion</EFDB_Name>
-        <Description></Description>
-        <IDL_Type>string</IDL_Type>
-        <Units></Units>
-        <Count>1</Count>
-        <Explanation>http://sal.lsst.org</Explanation>
-    </item>
-    <item>
         <EFDB_Name>recommendedSettingsLabels</EFDB_Name>
         <Description></Description>
         <IDL_Type>string</IDL_Type>
+        <IDL_Size>200</IDL_Size>
         <Units></Units>
         <Count>1</Count>
-        <Explanation>http://sal.lsst.org</Explanation>
     </item>
     <item>
-        <EFDB_Name>timestamp</EFDB_Name>
-        <Description>The timestamp for when the event occurred.</Description>
-        <IDL_Type>double</IDL_Type>
-        <Units>Seconds</Units>
+        <EFDB_Name>recommendedSettingsVersion</EFDB_Name>
+        <Description></Description>
+        <IDL_Type>string</IDL_Type>
+        <IDL_Size>200</IDL_Size>
+        <Units></Units>
         <Count>1</Count>
-        <Explanation>http://sal.lsst.org</Explanation>
     </item>
 </SALEvent></SALEventSet>
