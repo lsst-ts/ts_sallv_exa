@@ -34,7 +34,7 @@
     <item>
         <EFDB_Name>detailedState</EFDB_Name>
         <Description></Description>
-        <IDL_Type>short</IDL_Type>
+        <IDL_Type>long</IDL_Type>
         <Enumeration>DisabledState,EnabledState,FaultState,OfflineState,StandbyState</Enumeration>
         <Units></Units>
         <Count>1</Count>
@@ -57,7 +57,7 @@
     <item>
         <EFDB_Name>detailedState</EFDB_Name>
         <Description>An enumeration indicating the subsystem detailed state. See the DetailedStateValue enumeration defined in the Typedefs package.</Description>
-        <IDL_Type>short</IDL_Type>
+        <IDL_Type>long</IDL_Type>
         <Enumeration>DisabledState,EnabledState,FaultState,OfflineState,StandbyState</Enumeration>
         <Units></Units>
         <Count>1</Count>
@@ -103,8 +103,8 @@
     <item>
         <EFDB_Name>summaryState</EFDB_Name>
         <Description>An enumeration indicating the subsystem summary state. See the SummaryStateValue enumeration defined in the Typedefs package.</Description>
-        <IDL_Type>short</IDL_Type>
-        <Enumeration>OfflineState,StandbyState,DisabledState,EnabledState,FaultState</Enumeration>
+        <IDL_Type>long</IDL_Type>
+        <Enumeration>DisabledState,EnabledState,FaultState,OfflineState,StandbyState</Enumeration>
         <Units></Units>
         <Count>1</Count>
     </item>
@@ -147,7 +147,7 @@
     <Alias>SettingVersions</Alias>
     <Explanation>http://sal.lsst.org</Explanation>
     <item>
-        <EFDB_Name>recommendedSettingsLabels</EFDB_Name>
+        <EFDB_Name>recommendedSettingsVersion</EFDB_Name>
         <Description></Description>
         <IDL_Type>string</IDL_Type>
         <IDL_Size>200</IDL_Size>
@@ -155,7 +155,7 @@
         <Count>1</Count>
     </item>
     <item>
-        <EFDB_Name>recommendedSettingsVersion</EFDB_Name>
+        <EFDB_Name>recommendedSettingsLabels</EFDB_Name>
         <Description></Description>
         <IDL_Type>string</IDL_Type>
         <IDL_Size>200</IDL_Size>
