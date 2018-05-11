@@ -5,13 +5,12 @@
 	<Property Name="NI.Lib.Version" Type="Str">1.0.0.0</Property>
 	<Item Name="DataTypes" Type="Folder">
 		<Item Name=".ctl" Type="VI" URL="../DataTypes/.ctl"/>
+		<Item Name="DetailedState.ctl" Type="VI" URL="../DataTypes/DetailedState.ctl"/>
 		<Item Name="LoopTime_ms.ctl" Type="VI" URL="../DataTypes/LoopTime_ms.ctl"/>
+		<Item Name="SummaryState.ctl" Type="VI" URL="../DataTypes/SummaryState.ctl"/>
 		<Item Name="Timestamp.ctl" Type="VI" URL="../DataTypes/Timestamp.ctl"/>
 		<Item Name="ackcmd.ctl" Type="VI" URL="../DataTypes/ackcmd.ctl"/>
 		<Item Name="command.ctl" Type="VI" URL="../DataTypes/command.ctl"/>
-		<Item Name="command_Offset.ctl" Type="VI" URL="../DataTypes/command_Offset.ctl"/>
-		<Item Name="command_SpectrographSetup.ctl" Type="VI" URL="../DataTypes/command_SpectrographSetup.ctl"/>
-		<Item Name="command_Target.ctl" Type="VI" URL="../DataTypes/command_Target.ctl"/>
 		<Item Name="command_disable.ctl" Type="VI" URL="../DataTypes/command_disable.ctl"/>
 		<Item Name="command_enable.ctl" Type="VI" URL="../DataTypes/command_enable.ctl"/>
 		<Item Name="command_enterControl.ctl" Type="VI" URL="../DataTypes/command_enterControl.ctl"/>
@@ -27,10 +26,7 @@
 		<Item Name="logevent_LoopTimeOutOfRange.ctl" Type="VI" URL="../DataTypes/logevent_LoopTimeOutOfRange.ctl"/>
 		<Item Name="logevent_RejectedCommand.ctl" Type="VI" URL="../DataTypes/logevent_RejectedCommand.ctl"/>
 		<Item Name="logevent_SettingVersions.ctl" Type="VI" URL="../DataTypes/logevent_SettingVersions.ctl"/>
-		<Item Name="logevent_SettingsApplied_Example.ctl" Type="VI" URL="../DataTypes/logevent_SettingsApplied_Example.ctl"/>
-		<Item Name="logevent_SpectrographInPosition.ctl" Type="VI" URL="../DataTypes/logevent_SpectrographInPosition.ctl"/>
 		<Item Name="logevent_SummaryState.ctl" Type="VI" URL="../DataTypes/logevent_SummaryState.ctl"/>
-		<Item Name="logevent_TelescopeInPosition.ctl" Type="VI" URL="../DataTypes/logevent_TelescopeInPosition.ctl"/>
 	</Item>
 	<Item Name="subvi" Type="Folder">
 		<Item Name="ErrorConverter(ErrCodeorStatus).vi" Type="VI" URL="../subvi/ErrorConverter(ErrCodeorStatus).vi"/>

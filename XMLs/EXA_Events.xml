@@ -2,10 +2,13 @@
 <?xml-stylesheet type="text/xsl" href="http://lsst-sal.tuc.noao.edu/schema/SALEventSet.xsl"?>
 <SALEventSet xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:noNamespaceSchemaLocation="http://lsst-sal.tuc.noao.edu/schema/SALEventSet.xsd">
+<Enumeration>SummaryState_DisabledState,SummaryState_EnabledState,SummaryState_FaultState,SummaryState_OfflineState,SummaryState_StandbyState</Enumeration>
+<Enumeration>DetailedState_DisabledState,DetailedState_EnabledState,DetailedState_FaultState,DetailedState_OfflineState,DetailedState_StandbyState</Enumeration>
+
 <SALEvent>
     <Subsystem>EXA</Subsystem>
-    <Version>3.5.1</Version>
-    <Author>ccontaxis</Author>
+    <Version>3.5.2</Version>
+    <Author></Author>
     <EFDB_Topic>EXA_logevent_AppliedSettingsMatchStart</EFDB_Topic>
     <Alias>AppliedSettingsMatchStart</Alias>
     <Explanation>http://sal.lsst.org</Explanation>
@@ -19,60 +22,87 @@
 </SALEvent>
 <SALEvent>
     <Subsystem>EXA</Subsystem>
-    <Version>3.5.1</Version>
-    <Author>ccontaxis</Author>
-    <EFDB_Topic>EXA_logevent_RejectedCommand</EFDB_Topic>
-    <Alias>RejectedCommand</Alias>
+    <Version>3.5.2</Version>
+    <Author></Author>
+    <EFDB_Topic>EXA_logevent_ErrorCode</EFDB_Topic>
+    <Alias>ErrorCode</Alias>
     <Explanation>http://sal.lsst.org</Explanation>
     <item>
-        <EFDB_Name>commandValue</EFDB_Name>
-        <Description></Description>
-        <IDL_Type>unsigned short</IDL_Type>
-        <Units></Units>
-        <Count>1</Count>
-    </item>
-    <item>
-        <EFDB_Name>detailedState</EFDB_Name>
-        <Description></Description>
+        <EFDB_Name>errorCode</EFDB_Name>
+        <Description>The error code being published.</pre></html></Description>
         <IDL_Type>long</IDL_Type>
-        <Enumeration>DisabledState,EnabledState,FaultState,OfflineState,StandbyState</Enumeration>
-        <Units></Units>
-        <Count>1</Count>
-    </item>
-    <item>
-        <EFDB_Name>timestamp</EFDB_Name>
-        <Description></Description>
-        <IDL_Type>double</IDL_Type>
         <Units></Units>
         <Count>1</Count>
     </item>
 </SALEvent>
 <SALEvent>
     <Subsystem>EXA</Subsystem>
-    <Version>3.5.1</Version>
-    <Author>ccontaxis</Author>
+    <Version>3.5.2</Version>
+    <Author></Author>
+    <EFDB_Topic>EXA_logevent_SettingVersions</EFDB_Topic>
+    <Alias>SettingVersions</Alias>
+    <Explanation>http://sal.lsst.org</Explanation>
+    <item>
+        <EFDB_Name>recommendedSettingsVersion</EFDB_Name>
+        <Description></Description>
+        <IDL_Type>string</IDL_Type>
+        <IDL_Size>256</IDL_Size>
+        <Units></Units>
+        <Count>1</Count>
+    </item>
+    <item>
+        <EFDB_Name>recommendedSettingsLabels</EFDB_Name>
+        <Description></Description>
+        <IDL_Type>string</IDL_Type>
+        <IDL_Size>256</IDL_Size>
+        <Units></Units>
+        <Count>1</Count>
+    </item>
+</SALEvent>
+<SALEvent>
+    <Subsystem>EXA</Subsystem>
+    <Version>3.5.2</Version>
+    <Author></Author>
+    <EFDB_Topic>EXA_logevent_SummaryState</EFDB_Topic>
+    <Alias>SummaryState</Alias>
+    <Explanation>http://sal.lsst.org</Explanation>
+    <item>
+        <EFDB_Name>summaryState</EFDB_Name>
+        <Description>An enumeration indicating the subsystem summary state. See the SummaryStateValue enumeration defined in the Typedefs package.</pre></html></Description>
+        <!-- Enumeration: SummaryState -->
+        <IDL_Type>long</IDL_Type>
+        <Units></Units>
+        <Count>1</Count>
+        <Enumeration>summaryState_SummaryState_DisabledState,summaryState_SummaryState_EnabledState,summaryState_SummaryState_FaultState,summaryState_SummaryState_OfflineState,summaryState_SummaryState_StandbyState</Enumeration>
+    </item>
+</SALEvent>
+<SALEvent>
+    <Subsystem>EXA</Subsystem>
+    <Version>3.5.2</Version>
+    <Author></Author>
     <EFDB_Topic>EXA_logevent_DetailedState</EFDB_Topic>
     <Alias>DetailedState</Alias>
     <Explanation>http://sal.lsst.org</Explanation>
     <item>
         <EFDB_Name>detailedState</EFDB_Name>
-        <Description>An enumeration indicating the subsystem detailed state. See the DetailedStateValue enumeration defined in the Typedefs package.</Description>
+        <Description></Description>
+        <!-- Enumeration: DetailedState -->
         <IDL_Type>long</IDL_Type>
-        <Enumeration>DisabledState,EnabledState,FaultState,OfflineState,StandbyState</Enumeration>
         <Units></Units>
         <Count>1</Count>
+        <Enumeration>detailedState_DetailedState_DisabledState,detailedState_DetailedState_EnabledState,detailedState_DetailedState_FaultState,detailedState_DetailedState_OfflineState,detailedState_DetailedState_StandbyState</Enumeration>
     </item>
 </SALEvent>
 <SALEvent>
     <Subsystem>EXA</Subsystem>
-    <Version>3.5.1</Version>
-    <Author>ccontaxis</Author>
+    <Version>3.5.2</Version>
+    <Author></Author>
     <EFDB_Topic>EXA_logevent_InternalCommand</EFDB_Topic>
     <Alias>InternalCommand</Alias>
     <Explanation>http://sal.lsst.org</Explanation>
     <item>
         <EFDB_Name>CommandObject</EFDB_Name>
-        <Description></Description>
+        <Description>The error code being published.</pre></html></Description>
         <IDL_Type>byte</IDL_Type>
         <Units></Units>
         <Count>1000</Count>
@@ -80,54 +110,8 @@
 </SALEvent>
 <SALEvent>
     <Subsystem>EXA</Subsystem>
-    <Version>3.5.1</Version>
-    <Author>ccontaxis</Author>
-    <EFDB_Topic>EXA_logevent_LoopTimeOutOfRange</EFDB_Topic>
-    <Alias>LoopTimeOutOfRange</Alias>
-    <Explanation>http://sal.lsst.org</Explanation>
-    <item>
-        <EFDB_Name>loopTimeOutOfRange</EFDB_Name>
-        <Description></Description>
-        <IDL_Type>boolean</IDL_Type>
-        <Units></Units>
-        <Count>1</Count>
-    </item>
-</SALEvent>
-<SALEvent>
-    <Subsystem>EXA</Subsystem>
-    <Version>3.5.1</Version>
-    <Author>ccontaxis</Author>
-    <EFDB_Topic>EXA_logevent_SummaryState</EFDB_Topic>
-    <Alias>SummaryState</Alias>
-    <Explanation>http://sal.lsst.org</Explanation>
-    <item>
-        <EFDB_Name>summaryState</EFDB_Name>
-        <Description>An enumeration indicating the subsystem summary state. See the SummaryStateValue enumeration defined in the Typedefs package.</Description>
-        <IDL_Type>long</IDL_Type>
-        <Enumeration>DisabledState,EnabledState,FaultState,OfflineState,StandbyState</Enumeration>
-        <Units></Units>
-        <Count>1</Count>
-    </item>
-</SALEvent>
-<SALEvent>
-    <Subsystem>EXA</Subsystem>
-    <Version>3.5.1</Version>
-    <Author>ccontaxis</Author>
-    <EFDB_Topic>EXA_logevent_ErrorCode</EFDB_Topic>
-    <Alias>ErrorCode</Alias>
-    <Explanation>http://sal.lsst.org</Explanation>
-    <item>
-        <EFDB_Name>errorCode</EFDB_Name>
-        <Description>The error code being published.</Description>
-        <IDL_Type>long</IDL_Type>
-        <Units></Units>
-        <Count>1</Count>
-    </item>
-</SALEvent>
-<SALEvent>
-    <Subsystem>EXA</Subsystem>
-    <Version>3.5.1</Version>
-    <Author>ccontaxis</Author>
+    <Version>3.5.2</Version>
+    <Author></Author>
     <EFDB_Topic>EXA_logevent_Heartbeat</EFDB_Topic>
     <Alias>Heartbeat</Alias>
     <Explanation>http://sal.lsst.org</Explanation>
@@ -141,24 +125,46 @@
 </SALEvent>
 <SALEvent>
     <Subsystem>EXA</Subsystem>
-    <Version>3.5.1</Version>
-    <Author>ccontaxis</Author>
-    <EFDB_Topic>EXA_logevent_SettingVersions</EFDB_Topic>
-    <Alias>SettingVersions</Alias>
+    <Version>3.5.2</Version>
+    <Author></Author>
+    <EFDB_Topic>EXA_logevent_LoopTimeOutOfRange</EFDB_Topic>
+    <Alias>LoopTimeOutOfRange</Alias>
     <Explanation>http://sal.lsst.org</Explanation>
     <item>
-        <EFDB_Name>recommendedSettingsVersion</EFDB_Name>
+        <EFDB_Name>loopTimeOutOfRange</EFDB_Name>
         <Description></Description>
-        <IDL_Type>string</IDL_Type>
-        <IDL_Size>200</IDL_Size>
+        <IDL_Type>boolean</IDL_Type>
+        <Units></Units>
+        <Count>1</Count>
+    </item>
+</SALEvent>
+<SALEvent>
+    <Subsystem>EXA</Subsystem>
+    <Version>3.5.2</Version>
+    <Author></Author>
+    <EFDB_Topic>EXA_logevent_RejectedCommand</EFDB_Topic>
+    <Alias>RejectedCommand</Alias>
+    <Explanation>http://sal.lsst.org</Explanation>
+    <item>
+        <EFDB_Name>commandValue</EFDB_Name>
+        <Description></Description>
+        <IDL_Type>unsigned short</IDL_Type>
         <Units></Units>
         <Count>1</Count>
     </item>
     <item>
-        <EFDB_Name>recommendedSettingsLabels</EFDB_Name>
+        <EFDB_Name>detailedState</EFDB_Name>
         <Description></Description>
-        <IDL_Type>string</IDL_Type>
-        <IDL_Size>200</IDL_Size>
+        <!-- Enumeration: DetailedState -->
+        <IDL_Type>long</IDL_Type>
+        <Units></Units>
+        <Count>1</Count>
+        <Enumeration>detailedState_DetailedState_DisabledState,detailedState_DetailedState_EnabledState,detailedState_DetailedState_FaultState,detailedState_DetailedState_OfflineState,detailedState_DetailedState_StandbyState</Enumeration>
+    </item>
+    <item>
+        <EFDB_Name>timestamp</EFDB_Name>
+        <Description></Description>
+        <IDL_Type>double</IDL_Type>
         <Units></Units>
         <Count>1</Count>
     </item>
