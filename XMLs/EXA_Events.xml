@@ -9,8 +9,8 @@
     <Subsystem>EXA</Subsystem>
     <Version>3.5.2</Version>
     <Author></Author>
-    <EFDB_Topic>EXA_logevent_AppliedSettingsMatchStart</EFDB_Topic>
-    <Alias>AppliedSettingsMatchStart</Alias>
+    <EFDB_Topic>EXA_logevent_appliedSettingsMatchStart</EFDB_Topic>
+    <Alias>appliedSettingsMatchStart</Alias>
     <Explanation>http://sal.lsst.org</Explanation>
     <item>
         <EFDB_Name>appliedSettingsMatchStartIsTrue</EFDB_Name>
@@ -24,12 +24,12 @@
     <Subsystem>EXA</Subsystem>
     <Version>3.5.2</Version>
     <Author></Author>
-    <EFDB_Topic>EXA_logevent_ErrorCode</EFDB_Topic>
-    <Alias>ErrorCode</Alias>
+    <EFDB_Topic>EXA_logevent_errorCode</EFDB_Topic>
+    <Alias>errorCode</Alias>
     <Explanation>http://sal.lsst.org</Explanation>
     <item>
         <EFDB_Name>errorCode</EFDB_Name>
-        <Description>The error code being published.</pre></html></Description>
+        <Description>The error code being published.</Description>
         <IDL_Type>long</IDL_Type>
         <Units></Units>
         <Count>1</Count>
@@ -39,8 +39,8 @@
     <Subsystem>EXA</Subsystem>
     <Version>3.5.2</Version>
     <Author></Author>
-    <EFDB_Topic>EXA_logevent_SettingVersions</EFDB_Topic>
-    <Alias>SettingVersions</Alias>
+    <EFDB_Topic>EXA_logevent_settingVersions</EFDB_Topic>
+    <Alias>settingVersions</Alias>
     <Explanation>http://sal.lsst.org</Explanation>
     <item>
         <EFDB_Name>recommendedSettingsVersion</EFDB_Name>
@@ -63,12 +63,12 @@
     <Subsystem>EXA</Subsystem>
     <Version>3.5.2</Version>
     <Author></Author>
-    <EFDB_Topic>EXA_logevent_SummaryState</EFDB_Topic>
-    <Alias>SummaryState</Alias>
+    <EFDB_Topic>EXA_logevent_summaryState</EFDB_Topic>
+    <Alias>summaryState</Alias>
     <Explanation>http://sal.lsst.org</Explanation>
     <item>
         <EFDB_Name>summaryState</EFDB_Name>
-        <Description>An enumeration indicating the subsystem summary state. See the SummaryStateValue enumeration defined in the Typedefs package.</pre></html></Description>
+        <Description>An enumeration indicating the subsystem summary state. See the SummaryStateValue enumeration defined in the Typedefs package.</Description>
         <!-- Enumeration: SummaryState -->
         <IDL_Type>long</IDL_Type>
         <Units></Units>
@@ -80,8 +80,8 @@
     <Subsystem>EXA</Subsystem>
     <Version>3.5.2</Version>
     <Author></Author>
-    <EFDB_Topic>EXA_logevent_DetailedState</EFDB_Topic>
-    <Alias>DetailedState</Alias>
+    <EFDB_Topic>EXA_logevent_detailedState</EFDB_Topic>
+    <Alias>detailedState</Alias>
     <Explanation>http://sal.lsst.org</Explanation>
     <item>
         <EFDB_Name>detailedState</EFDB_Name>
@@ -97,23 +97,23 @@
     <Subsystem>EXA</Subsystem>
     <Version>3.5.2</Version>
     <Author></Author>
-    <EFDB_Topic>EXA_logevent_InternalCommand</EFDB_Topic>
-    <Alias>InternalCommand</Alias>
+    <EFDB_Topic>EXA_logevent_internalCommand</EFDB_Topic>
+    <Alias>internalCommand</Alias>
     <Explanation>http://sal.lsst.org</Explanation>
     <item>
-        <EFDB_Name>CommandObject</EFDB_Name>
-        <Description>The error code being published.</pre></html></Description>
+        <EFDB_Name>commandObject</EFDB_Name>
+        <Description>The error code being published.</Description>
         <IDL_Type>byte</IDL_Type>
         <Units></Units>
-        <Count>1000</Count>
+        <Count>800</Count>
     </item>
 </SALEvent>
 <SALEvent>
     <Subsystem>EXA</Subsystem>
     <Version>3.5.2</Version>
     <Author></Author>
-    <EFDB_Topic>EXA_logevent_Heartbeat</EFDB_Topic>
-    <Alias>Heartbeat</Alias>
+    <EFDB_Topic>EXA_logevent_heartbeat</EFDB_Topic>
+    <Alias>heartbeat</Alias>
     <Explanation>http://sal.lsst.org</Explanation>
     <item>
         <EFDB_Name>heartbeat</EFDB_Name>
@@ -127,8 +127,8 @@
     <Subsystem>EXA</Subsystem>
     <Version>3.5.2</Version>
     <Author></Author>
-    <EFDB_Topic>EXA_logevent_LoopTimeOutOfRange</EFDB_Topic>
-    <Alias>LoopTimeOutOfRange</Alias>
+    <EFDB_Topic>EXA_logevent_loopTimeOutOfRange</EFDB_Topic>
+    <Alias>loopTimeOutOfRange</Alias>
     <Explanation>http://sal.lsst.org</Explanation>
     <item>
         <EFDB_Name>loopTimeOutOfRange</EFDB_Name>
@@ -142,8 +142,8 @@
     <Subsystem>EXA</Subsystem>
     <Version>3.5.2</Version>
     <Author></Author>
-    <EFDB_Topic>EXA_logevent_RejectedCommand</EFDB_Topic>
-    <Alias>RejectedCommand</Alias>
+    <EFDB_Topic>EXA_logevent_rejectedCommand</EFDB_Topic>
+    <Alias>rejectedCommand</Alias>
     <Explanation>http://sal.lsst.org</Explanation>
     <item>
         <EFDB_Name>commandValue</EFDB_Name>

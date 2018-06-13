@@ -6,9 +6,7 @@
 	<Item Name="DataTypes" Type="Folder">
 		<Item Name=".ctl" Type="VI" URL="../DataTypes/.ctl"/>
 		<Item Name="DetailedState.ctl" Type="VI" URL="../DataTypes/DetailedState.ctl"/>
-		<Item Name="LoopTime_ms.ctl" Type="VI" URL="../DataTypes/LoopTime_ms.ctl"/>
 		<Item Name="SummaryState.ctl" Type="VI" URL="../DataTypes/SummaryState.ctl"/>
-		<Item Name="Timestamp.ctl" Type="VI" URL="../DataTypes/Timestamp.ctl"/>
 		<Item Name="ackcmd.ctl" Type="VI" URL="../DataTypes/ackcmd.ctl"/>
 		<Item Name="command.ctl" Type="VI" URL="../DataTypes/command.ctl"/>
 		<Item Name="command_disable.ctl" Type="VI" URL="../DataTypes/command_disable.ctl"/>
@@ -18,15 +16,17 @@
 		<Item Name="command_standby.ctl" Type="VI" URL="../DataTypes/command_standby.ctl"/>
 		<Item Name="command_start.ctl" Type="VI" URL="../DataTypes/command_start.ctl"/>
 		<Item Name="logevent.ctl" Type="VI" URL="../DataTypes/logevent.ctl"/>
-		<Item Name="logevent_AppliedSettingsMatchStart.ctl" Type="VI" URL="../DataTypes/logevent_AppliedSettingsMatchStart.ctl"/>
-		<Item Name="logevent_DetailedState.ctl" Type="VI" URL="../DataTypes/logevent_DetailedState.ctl"/>
-		<Item Name="logevent_ErrorCode.ctl" Type="VI" URL="../DataTypes/logevent_ErrorCode.ctl"/>
-		<Item Name="logevent_Heartbeat.ctl" Type="VI" URL="../DataTypes/logevent_Heartbeat.ctl"/>
-		<Item Name="logevent_InternalCommand.ctl" Type="VI" URL="../DataTypes/logevent_InternalCommand.ctl"/>
-		<Item Name="logevent_LoopTimeOutOfRange.ctl" Type="VI" URL="../DataTypes/logevent_LoopTimeOutOfRange.ctl"/>
-		<Item Name="logevent_RejectedCommand.ctl" Type="VI" URL="../DataTypes/logevent_RejectedCommand.ctl"/>
-		<Item Name="logevent_SettingVersions.ctl" Type="VI" URL="../DataTypes/logevent_SettingVersions.ctl"/>
-		<Item Name="logevent_SummaryState.ctl" Type="VI" URL="../DataTypes/logevent_SummaryState.ctl"/>
+		<Item Name="logevent_appliedSettingsMatchStart.ctl" Type="VI" URL="../DataTypes/logevent_appliedSettingsMatchStart.ctl"/>
+		<Item Name="logevent_detailedState.ctl" Type="VI" URL="../DataTypes/logevent_detailedState.ctl"/>
+		<Item Name="logevent_errorCode.ctl" Type="VI" URL="../DataTypes/logevent_errorCode.ctl"/>
+		<Item Name="logevent_heartbeat.ctl" Type="VI" URL="../DataTypes/logevent_heartbeat.ctl"/>
+		<Item Name="logevent_internalCommand.ctl" Type="VI" URL="../DataTypes/logevent_internalCommand.ctl"/>
+		<Item Name="logevent_loopTimeOutOfRange.ctl" Type="VI" URL="../DataTypes/logevent_loopTimeOutOfRange.ctl"/>
+		<Item Name="logevent_rejectedCommand.ctl" Type="VI" URL="../DataTypes/logevent_rejectedCommand.ctl"/>
+		<Item Name="logevent_settingVersions.ctl" Type="VI" URL="../DataTypes/logevent_settingVersions.ctl"/>
+		<Item Name="logevent_summaryState.ctl" Type="VI" URL="../DataTypes/logevent_summaryState.ctl"/>
+		<Item Name="loopTimeMs.ctl" Type="VI" URL="../DataTypes/loopTimeMs.ctl"/>
+		<Item Name="timestamp.ctl" Type="VI" URL="../DataTypes/timestamp.ctl"/>
 	</Item>
 	<Item Name="subvi" Type="Folder">
 		<Item Name="ErrorConverter(ErrCodeorStatus).vi" Type="VI" URL="../subvi/ErrorConverter(ErrCodeorStatus).vi"/>
@@ -45,8 +45,6 @@
 	<Item Name="EXA_ackCommand_exitControl.vi" Type="VI" URL="../VIs/EXA_ackCommand_exitControl.vi"/>
 	<Item Name="EXA_ackCommand_standby.vi" Type="VI" URL="../VIs/EXA_ackCommand_standby.vi"/>
 	<Item Name="EXA_ackCommand_start.vi" Type="VI" URL="../VIs/EXA_ackCommand_start.vi"/>
-	<Item Name="EXA_cancelCallback_LoopTimems.vi" Type="VI" URL="../VIs/EXA_cancelCallback_LoopTimems.vi"/>
-	<Item Name="EXA_cancelCallback_Timestamp.vi" Type="VI" URL="../VIs/EXA_cancelCallback_Timestamp.vi"/>
 	<Item Name="EXA_cancelCallback_ackcmd.vi" Type="VI" URL="../VIs/EXA_cancelCallback_ackcmd.vi"/>
 	<Item Name="EXA_cancelCallback_command_.vi" Type="VI" URL="../VIs/EXA_cancelCallback_command_.vi"/>
 	<Item Name="EXA_cancelCallback_command_disable.vi" Type="VI" URL="../VIs/EXA_cancelCallback_command_disable.vi"/>
@@ -62,70 +60,70 @@
 	<Item Name="EXA_cancelCallback_command_start.vi" Type="VI" URL="../VIs/EXA_cancelCallback_command_start.vi"/>
 	<Item Name="EXA_cancelCallback_command_startackcmd.vi" Type="VI" URL="../VIs/EXA_cancelCallback_command_startackcmd.vi"/>
 	<Item Name="EXA_cancelCallback_logEvent_.vi" Type="VI" URL="../VIs/EXA_cancelCallback_logEvent_.vi"/>
-	<Item Name="EXA_cancelCallback_logEvent_AppliedSettingsMatchStart.vi" Type="VI" URL="../VIs/EXA_cancelCallback_logEvent_AppliedSettingsMatchStart.vi"/>
-	<Item Name="EXA_cancelCallback_logEvent_DetailedState.vi" Type="VI" URL="../VIs/EXA_cancelCallback_logEvent_DetailedState.vi"/>
-	<Item Name="EXA_cancelCallback_logEvent_ErrorCode.vi" Type="VI" URL="../VIs/EXA_cancelCallback_logEvent_ErrorCode.vi"/>
-	<Item Name="EXA_cancelCallback_logEvent_Heartbeat.vi" Type="VI" URL="../VIs/EXA_cancelCallback_logEvent_Heartbeat.vi"/>
-	<Item Name="EXA_cancelCallback_logEvent_InternalCommand.vi" Type="VI" URL="../VIs/EXA_cancelCallback_logEvent_InternalCommand.vi"/>
-	<Item Name="EXA_cancelCallback_logEvent_LoopTimeOutOfRange.vi" Type="VI" URL="../VIs/EXA_cancelCallback_logEvent_LoopTimeOutOfRange.vi"/>
-	<Item Name="EXA_cancelCallback_logEvent_RejectedCommand.vi" Type="VI" URL="../VIs/EXA_cancelCallback_logEvent_RejectedCommand.vi"/>
-	<Item Name="EXA_cancelCallback_logEvent_SettingVersions.vi" Type="VI" URL="../VIs/EXA_cancelCallback_logEvent_SettingVersions.vi"/>
-	<Item Name="EXA_cancelCallback_logEvent_SummaryState.vi" Type="VI" URL="../VIs/EXA_cancelCallback_logEvent_SummaryState.vi"/>
+	<Item Name="EXA_cancelCallback_logEvent_appliedSettingsMatchStart.vi" Type="VI" URL="../VIs/EXA_cancelCallback_logEvent_appliedSettingsMatchStart.vi"/>
+	<Item Name="EXA_cancelCallback_logEvent_detailedState.vi" Type="VI" URL="../VIs/EXA_cancelCallback_logEvent_detailedState.vi"/>
+	<Item Name="EXA_cancelCallback_logEvent_errorCode.vi" Type="VI" URL="../VIs/EXA_cancelCallback_logEvent_errorCode.vi"/>
+	<Item Name="EXA_cancelCallback_logEvent_heartbeat.vi" Type="VI" URL="../VIs/EXA_cancelCallback_logEvent_heartbeat.vi"/>
+	<Item Name="EXA_cancelCallback_logEvent_internalCommand.vi" Type="VI" URL="../VIs/EXA_cancelCallback_logEvent_internalCommand.vi"/>
+	<Item Name="EXA_cancelCallback_logEvent_loopTimeOutOfRange.vi" Type="VI" URL="../VIs/EXA_cancelCallback_logEvent_loopTimeOutOfRange.vi"/>
+	<Item Name="EXA_cancelCallback_logEvent_rejectedCommand.vi" Type="VI" URL="../VIs/EXA_cancelCallback_logEvent_rejectedCommand.vi"/>
+	<Item Name="EXA_cancelCallback_logEvent_settingVersions.vi" Type="VI" URL="../VIs/EXA_cancelCallback_logEvent_settingVersions.vi"/>
+	<Item Name="EXA_cancelCallback_logEvent_summaryState.vi" Type="VI" URL="../VIs/EXA_cancelCallback_logEvent_summaryState.vi"/>
+	<Item Name="EXA_cancelCallback_loopTimeMs.vi" Type="VI" URL="../VIs/EXA_cancelCallback_loopTimeMs.vi"/>
+	<Item Name="EXA_cancelCallback_timestamp.vi" Type="VI" URL="../VIs/EXA_cancelCallback_timestamp.vi"/>
 	<Item Name="EXA_checkCallbacks.vi" Type="VI" URL="../VIs/EXA_checkCallbacks.vi"/>
-	<Item Name="EXA_flushSamplesEvent_AppliedSettingsMatchStart.vi" Type="VI" URL="../VIs/EXA_flushSamplesEvent_AppliedSettingsMatchStart.vi"/>
-	<Item Name="EXA_flushSamplesEvent_DetailedState.vi" Type="VI" URL="../VIs/EXA_flushSamplesEvent_DetailedState.vi"/>
-	<Item Name="EXA_flushSamplesEvent_ErrorCode.vi" Type="VI" URL="../VIs/EXA_flushSamplesEvent_ErrorCode.vi"/>
-	<Item Name="EXA_flushSamplesEvent_Heartbeat.vi" Type="VI" URL="../VIs/EXA_flushSamplesEvent_Heartbeat.vi"/>
-	<Item Name="EXA_flushSamplesEvent_InternalCommand.vi" Type="VI" URL="../VIs/EXA_flushSamplesEvent_InternalCommand.vi"/>
-	<Item Name="EXA_flushSamplesEvent_LoopTimeOutOfRange.vi" Type="VI" URL="../VIs/EXA_flushSamplesEvent_LoopTimeOutOfRange.vi"/>
-	<Item Name="EXA_flushSamplesEvent_RejectedCommand.vi" Type="VI" URL="../VIs/EXA_flushSamplesEvent_RejectedCommand.vi"/>
-	<Item Name="EXA_flushSamplesEvent_SettingVersions.vi" Type="VI" URL="../VIs/EXA_flushSamplesEvent_SettingVersions.vi"/>
-	<Item Name="EXA_flushSamplesEvent_SummaryState.vi" Type="VI" URL="../VIs/EXA_flushSamplesEvent_SummaryState.vi"/>
+	<Item Name="EXA_flushSamplesEvent_appliedSettingsMatchStart.vi" Type="VI" URL="../VIs/EXA_flushSamplesEvent_appliedSettingsMatchStart.vi"/>
+	<Item Name="EXA_flushSamplesEvent_detailedState.vi" Type="VI" URL="../VIs/EXA_flushSamplesEvent_detailedState.vi"/>
+	<Item Name="EXA_flushSamplesEvent_errorCode.vi" Type="VI" URL="../VIs/EXA_flushSamplesEvent_errorCode.vi"/>
+	<Item Name="EXA_flushSamplesEvent_heartbeat.vi" Type="VI" URL="../VIs/EXA_flushSamplesEvent_heartbeat.vi"/>
+	<Item Name="EXA_flushSamplesEvent_internalCommand.vi" Type="VI" URL="../VIs/EXA_flushSamplesEvent_internalCommand.vi"/>
+	<Item Name="EXA_flushSamplesEvent_loopTimeOutOfRange.vi" Type="VI" URL="../VIs/EXA_flushSamplesEvent_loopTimeOutOfRange.vi"/>
+	<Item Name="EXA_flushSamplesEvent_rejectedCommand.vi" Type="VI" URL="../VIs/EXA_flushSamplesEvent_rejectedCommand.vi"/>
+	<Item Name="EXA_flushSamplesEvent_settingVersions.vi" Type="VI" URL="../VIs/EXA_flushSamplesEvent_settingVersions.vi"/>
+	<Item Name="EXA_flushSamplesEvent_summaryState.vi" Type="VI" URL="../VIs/EXA_flushSamplesEvent_summaryState.vi"/>
 	<Item Name="EXA_getCurrentTime.vi" Type="VI" URL="../VIs/EXA_getCurrentTime.vi"/>
-	<Item Name="EXA_getEvent_AppliedSettingsMatchStart.vi" Type="VI" URL="../VIs/EXA_getEvent_AppliedSettingsMatchStart.vi"/>
-	<Item Name="EXA_getEvent_DetailedState.vi" Type="VI" URL="../VIs/EXA_getEvent_DetailedState.vi"/>
-	<Item Name="EXA_getEvent_ErrorCode.vi" Type="VI" URL="../VIs/EXA_getEvent_ErrorCode.vi"/>
-	<Item Name="EXA_getEvent_Heartbeat.vi" Type="VI" URL="../VIs/EXA_getEvent_Heartbeat.vi"/>
-	<Item Name="EXA_getEvent_InternalCommand.vi" Type="VI" URL="../VIs/EXA_getEvent_InternalCommand.vi"/>
-	<Item Name="EXA_getEvent_LoopTimeOutOfRange.vi" Type="VI" URL="../VIs/EXA_getEvent_LoopTimeOutOfRange.vi"/>
-	<Item Name="EXA_getEvent_RejectedCommand.vi" Type="VI" URL="../VIs/EXA_getEvent_RejectedCommand.vi"/>
-	<Item Name="EXA_getEvent_SettingVersions.vi" Type="VI" URL="../VIs/EXA_getEvent_SettingVersions.vi"/>
-	<Item Name="EXA_getEvent_SummaryState.vi" Type="VI" URL="../VIs/EXA_getEvent_SummaryState.vi"/>
-	<Item Name="EXA_getNextSample_LoopTimems.vi" Type="VI" URL="../VIs/EXA_getNextSample_LoopTimems.vi"/>
-	<Item Name="EXA_getNextSample_Timestamp.vi" Type="VI" URL="../VIs/EXA_getNextSample_Timestamp.vi"/>
+	<Item Name="EXA_getEvent_appliedSettingsMatchStart.vi" Type="VI" URL="../VIs/EXA_getEvent_appliedSettingsMatchStart.vi"/>
+	<Item Name="EXA_getEvent_detailedState.vi" Type="VI" URL="../VIs/EXA_getEvent_detailedState.vi"/>
+	<Item Name="EXA_getEvent_errorCode.vi" Type="VI" URL="../VIs/EXA_getEvent_errorCode.vi"/>
+	<Item Name="EXA_getEvent_heartbeat.vi" Type="VI" URL="../VIs/EXA_getEvent_heartbeat.vi"/>
+	<Item Name="EXA_getEvent_internalCommand.vi" Type="VI" URL="../VIs/EXA_getEvent_internalCommand.vi"/>
+	<Item Name="EXA_getEvent_loopTimeOutOfRange.vi" Type="VI" URL="../VIs/EXA_getEvent_loopTimeOutOfRange.vi"/>
+	<Item Name="EXA_getEvent_rejectedCommand.vi" Type="VI" URL="../VIs/EXA_getEvent_rejectedCommand.vi"/>
+	<Item Name="EXA_getEvent_settingVersions.vi" Type="VI" URL="../VIs/EXA_getEvent_settingVersions.vi"/>
+	<Item Name="EXA_getEvent_summaryState.vi" Type="VI" URL="../VIs/EXA_getEvent_summaryState.vi"/>
+	<Item Name="EXA_getNextSample_loopTimeMs.vi" Type="VI" URL="../VIs/EXA_getNextSample_loopTimeMs.vi"/>
+	<Item Name="EXA_getNextSample_timestamp.vi" Type="VI" URL="../VIs/EXA_getNextSample_timestamp.vi"/>
 	<Item Name="EXA_getResponse_disable.vi" Type="VI" URL="../VIs/EXA_getResponse_disable.vi"/>
 	<Item Name="EXA_getResponse_enable.vi" Type="VI" URL="../VIs/EXA_getResponse_enable.vi"/>
 	<Item Name="EXA_getResponse_enterControl.vi" Type="VI" URL="../VIs/EXA_getResponse_enterControl.vi"/>
 	<Item Name="EXA_getResponse_exitControl.vi" Type="VI" URL="../VIs/EXA_getResponse_exitControl.vi"/>
 	<Item Name="EXA_getResponse_standby.vi" Type="VI" URL="../VIs/EXA_getResponse_standby.vi"/>
 	<Item Name="EXA_getResponse_start.vi" Type="VI" URL="../VIs/EXA_getResponse_start.vi"/>
-	<Item Name="EXA_getSample_LoopTimems.vi" Type="VI" URL="../VIs/EXA_getSample_LoopTimems.vi"/>
-	<Item Name="EXA_getSample_Timestamp.vi" Type="VI" URL="../VIs/EXA_getSample_Timestamp.vi"/>
+	<Item Name="EXA_getSample_loopTimeMs.vi" Type="VI" URL="../VIs/EXA_getSample_loopTimeMs.vi"/>
+	<Item Name="EXA_getSample_timestamp.vi" Type="VI" URL="../VIs/EXA_getSample_timestamp.vi"/>
 	<Item Name="EXA_issueCommand_disable.vi" Type="VI" URL="../VIs/EXA_issueCommand_disable.vi"/>
 	<Item Name="EXA_issueCommand_enable.vi" Type="VI" URL="../VIs/EXA_issueCommand_enable.vi"/>
 	<Item Name="EXA_issueCommand_enterControl.vi" Type="VI" URL="../VIs/EXA_issueCommand_enterControl.vi"/>
 	<Item Name="EXA_issueCommand_exitControl.vi" Type="VI" URL="../VIs/EXA_issueCommand_exitControl.vi"/>
 	<Item Name="EXA_issueCommand_standby.vi" Type="VI" URL="../VIs/EXA_issueCommand_standby.vi"/>
 	<Item Name="EXA_issueCommand_start.vi" Type="VI" URL="../VIs/EXA_issueCommand_start.vi"/>
-	<Item Name="EXA_logEvent_AppliedSettingsMatchStart.vi" Type="VI" URL="../VIs/EXA_logEvent_AppliedSettingsMatchStart.vi"/>
-	<Item Name="EXA_logEvent_DetailedState.vi" Type="VI" URL="../VIs/EXA_logEvent_DetailedState.vi"/>
-	<Item Name="EXA_logEvent_ErrorCode.vi" Type="VI" URL="../VIs/EXA_logEvent_ErrorCode.vi"/>
-	<Item Name="EXA_logEvent_Heartbeat.vi" Type="VI" URL="../VIs/EXA_logEvent_Heartbeat.vi"/>
-	<Item Name="EXA_logEvent_InternalCommand.vi" Type="VI" URL="../VIs/EXA_logEvent_InternalCommand.vi"/>
-	<Item Name="EXA_logEvent_LoopTimeOutOfRange.vi" Type="VI" URL="../VIs/EXA_logEvent_LoopTimeOutOfRange.vi"/>
-	<Item Name="EXA_logEvent_RejectedCommand.vi" Type="VI" URL="../VIs/EXA_logEvent_RejectedCommand.vi"/>
-	<Item Name="EXA_logEvent_SettingVersions.vi" Type="VI" URL="../VIs/EXA_logEvent_SettingVersions.vi"/>
-	<Item Name="EXA_logEvent_SummaryState.vi" Type="VI" URL="../VIs/EXA_logEvent_SummaryState.vi"/>
+	<Item Name="EXA_logEvent_appliedSettingsMatchStart.vi" Type="VI" URL="../VIs/EXA_logEvent_appliedSettingsMatchStart.vi"/>
+	<Item Name="EXA_logEvent_detailedState.vi" Type="VI" URL="../VIs/EXA_logEvent_detailedState.vi"/>
+	<Item Name="EXA_logEvent_errorCode.vi" Type="VI" URL="../VIs/EXA_logEvent_errorCode.vi"/>
+	<Item Name="EXA_logEvent_heartbeat.vi" Type="VI" URL="../VIs/EXA_logEvent_heartbeat.vi"/>
+	<Item Name="EXA_logEvent_internalCommand.vi" Type="VI" URL="../VIs/EXA_logEvent_internalCommand.vi"/>
+	<Item Name="EXA_logEvent_loopTimeOutOfRange.vi" Type="VI" URL="../VIs/EXA_logEvent_loopTimeOutOfRange.vi"/>
+	<Item Name="EXA_logEvent_rejectedCommand.vi" Type="VI" URL="../VIs/EXA_logEvent_rejectedCommand.vi"/>
+	<Item Name="EXA_logEvent_settingVersions.vi" Type="VI" URL="../VIs/EXA_logEvent_settingVersions.vi"/>
+	<Item Name="EXA_logEvent_summaryState.vi" Type="VI" URL="../VIs/EXA_logEvent_summaryState.vi"/>
 	<Item Name="EXA_monitorCommand_disable.vi" Type="VI" URL="../VIs/EXA_monitorCommand_disable.vi"/>
 	<Item Name="EXA_monitorCommand_enable.vi" Type="VI" URL="../VIs/EXA_monitorCommand_enable.vi"/>
 	<Item Name="EXA_monitorCommand_enterControl.vi" Type="VI" URL="../VIs/EXA_monitorCommand_enterControl.vi"/>
 	<Item Name="EXA_monitorCommand_exitControl.vi" Type="VI" URL="../VIs/EXA_monitorCommand_exitControl.vi"/>
 	<Item Name="EXA_monitorCommand_standby.vi" Type="VI" URL="../VIs/EXA_monitorCommand_standby.vi"/>
 	<Item Name="EXA_monitorCommand_start.vi" Type="VI" URL="../VIs/EXA_monitorCommand_start.vi"/>
-	<Item Name="EXA_putSample_LoopTimems.vi" Type="VI" URL="../VIs/EXA_putSample_LoopTimems.vi"/>
-	<Item Name="EXA_putSample_Timestamp.vi" Type="VI" URL="../VIs/EXA_putSample_Timestamp.vi"/>
-	<Item Name="EXA_registerCallback_LoopTimems.vi" Type="VI" URL="../VIs/EXA_registerCallback_LoopTimems.vi"/>
-	<Item Name="EXA_registerCallback_Timestamp.vi" Type="VI" URL="../VIs/EXA_registerCallback_Timestamp.vi"/>
+	<Item Name="EXA_putSample_loopTimeMs.vi" Type="VI" URL="../VIs/EXA_putSample_loopTimeMs.vi"/>
+	<Item Name="EXA_putSample_timestamp.vi" Type="VI" URL="../VIs/EXA_putSample_timestamp.vi"/>
 	<Item Name="EXA_registerCallback_ackcmd.vi" Type="VI" URL="../VIs/EXA_registerCallback_ackcmd.vi"/>
 	<Item Name="EXA_registerCallback_command_.vi" Type="VI" URL="../VIs/EXA_registerCallback_command_.vi"/>
 	<Item Name="EXA_registerCallback_command_disable.vi" Type="VI" URL="../VIs/EXA_registerCallback_command_disable.vi"/>
@@ -141,38 +139,40 @@
 	<Item Name="EXA_registerCallback_command_start.vi" Type="VI" URL="../VIs/EXA_registerCallback_command_start.vi"/>
 	<Item Name="EXA_registerCallback_command_startackcmd.vi" Type="VI" URL="../VIs/EXA_registerCallback_command_startackcmd.vi"/>
 	<Item Name="EXA_registerCallback_logEvent_.vi" Type="VI" URL="../VIs/EXA_registerCallback_logEvent_.vi"/>
-	<Item Name="EXA_registerCallback_logEvent_AppliedSettingsMatchStart.vi" Type="VI" URL="../VIs/EXA_registerCallback_logEvent_AppliedSettingsMatchStart.vi"/>
-	<Item Name="EXA_registerCallback_logEvent_DetailedState.vi" Type="VI" URL="../VIs/EXA_registerCallback_logEvent_DetailedState.vi"/>
-	<Item Name="EXA_registerCallback_logEvent_ErrorCode.vi" Type="VI" URL="../VIs/EXA_registerCallback_logEvent_ErrorCode.vi"/>
-	<Item Name="EXA_registerCallback_logEvent_Heartbeat.vi" Type="VI" URL="../VIs/EXA_registerCallback_logEvent_Heartbeat.vi"/>
-	<Item Name="EXA_registerCallback_logEvent_InternalCommand.vi" Type="VI" URL="../VIs/EXA_registerCallback_logEvent_InternalCommand.vi"/>
-	<Item Name="EXA_registerCallback_logEvent_LoopTimeOutOfRange.vi" Type="VI" URL="../VIs/EXA_registerCallback_logEvent_LoopTimeOutOfRange.vi"/>
-	<Item Name="EXA_registerCallback_logEvent_RejectedCommand.vi" Type="VI" URL="../VIs/EXA_registerCallback_logEvent_RejectedCommand.vi"/>
-	<Item Name="EXA_registerCallback_logEvent_SettingVersions.vi" Type="VI" URL="../VIs/EXA_registerCallback_logEvent_SettingVersions.vi"/>
-	<Item Name="EXA_registerCallback_logEvent_SummaryState.vi" Type="VI" URL="../VIs/EXA_registerCallback_logEvent_SummaryState.vi"/>
+	<Item Name="EXA_registerCallback_logEvent_appliedSettingsMatchStart.vi" Type="VI" URL="../VIs/EXA_registerCallback_logEvent_appliedSettingsMatchStart.vi"/>
+	<Item Name="EXA_registerCallback_logEvent_detailedState.vi" Type="VI" URL="../VIs/EXA_registerCallback_logEvent_detailedState.vi"/>
+	<Item Name="EXA_registerCallback_logEvent_errorCode.vi" Type="VI" URL="../VIs/EXA_registerCallback_logEvent_errorCode.vi"/>
+	<Item Name="EXA_registerCallback_logEvent_heartbeat.vi" Type="VI" URL="../VIs/EXA_registerCallback_logEvent_heartbeat.vi"/>
+	<Item Name="EXA_registerCallback_logEvent_internalCommand.vi" Type="VI" URL="../VIs/EXA_registerCallback_logEvent_internalCommand.vi"/>
+	<Item Name="EXA_registerCallback_logEvent_loopTimeOutOfRange.vi" Type="VI" URL="../VIs/EXA_registerCallback_logEvent_loopTimeOutOfRange.vi"/>
+	<Item Name="EXA_registerCallback_logEvent_rejectedCommand.vi" Type="VI" URL="../VIs/EXA_registerCallback_logEvent_rejectedCommand.vi"/>
+	<Item Name="EXA_registerCallback_logEvent_settingVersions.vi" Type="VI" URL="../VIs/EXA_registerCallback_logEvent_settingVersions.vi"/>
+	<Item Name="EXA_registerCallback_logEvent_summaryState.vi" Type="VI" URL="../VIs/EXA_registerCallback_logEvent_summaryState.vi"/>
+	<Item Name="EXA_registerCallback_loopTimeMs.vi" Type="VI" URL="../VIs/EXA_registerCallback_loopTimeMs.vi"/>
+	<Item Name="EXA_registerCallback_timestamp.vi" Type="VI" URL="../VIs/EXA_registerCallback_timestamp.vi"/>
 	<Item Name="EXA_salCommander_disable.vi" Type="VI" URL="../VIs/EXA_salCommander_disable.vi"/>
 	<Item Name="EXA_salCommander_enable.vi" Type="VI" URL="../VIs/EXA_salCommander_enable.vi"/>
 	<Item Name="EXA_salCommander_enterControl.vi" Type="VI" URL="../VIs/EXA_salCommander_enterControl.vi"/>
 	<Item Name="EXA_salCommander_exitControl.vi" Type="VI" URL="../VIs/EXA_salCommander_exitControl.vi"/>
 	<Item Name="EXA_salCommander_standby.vi" Type="VI" URL="../VIs/EXA_salCommander_standby.vi"/>
 	<Item Name="EXA_salCommander_start.vi" Type="VI" URL="../VIs/EXA_salCommander_start.vi"/>
-	<Item Name="EXA_salEvent_AppliedSettingsMatchStart.vi" Type="VI" URL="../VIs/EXA_salEvent_AppliedSettingsMatchStart.vi"/>
-	<Item Name="EXA_salEvent_DetailedState.vi" Type="VI" URL="../VIs/EXA_salEvent_DetailedState.vi"/>
-	<Item Name="EXA_salEvent_ErrorCode.vi" Type="VI" URL="../VIs/EXA_salEvent_ErrorCode.vi"/>
-	<Item Name="EXA_salEvent_Heartbeat.vi" Type="VI" URL="../VIs/EXA_salEvent_Heartbeat.vi"/>
-	<Item Name="EXA_salEvent_InternalCommand.vi" Type="VI" URL="../VIs/EXA_salEvent_InternalCommand.vi"/>
-	<Item Name="EXA_salEvent_LoopTimeOutOfRange.vi" Type="VI" URL="../VIs/EXA_salEvent_LoopTimeOutOfRange.vi"/>
-	<Item Name="EXA_salEvent_RejectedCommand.vi" Type="VI" URL="../VIs/EXA_salEvent_RejectedCommand.vi"/>
-	<Item Name="EXA_salEvent_SettingVersions.vi" Type="VI" URL="../VIs/EXA_salEvent_SettingVersions.vi"/>
-	<Item Name="EXA_salEvent_SummaryState.vi" Type="VI" URL="../VIs/EXA_salEvent_SummaryState.vi"/>
+	<Item Name="EXA_salEvent_appliedSettingsMatchStart.vi" Type="VI" URL="../VIs/EXA_salEvent_appliedSettingsMatchStart.vi"/>
+	<Item Name="EXA_salEvent_detailedState.vi" Type="VI" URL="../VIs/EXA_salEvent_detailedState.vi"/>
+	<Item Name="EXA_salEvent_errorCode.vi" Type="VI" URL="../VIs/EXA_salEvent_errorCode.vi"/>
+	<Item Name="EXA_salEvent_heartbeat.vi" Type="VI" URL="../VIs/EXA_salEvent_heartbeat.vi"/>
+	<Item Name="EXA_salEvent_internalCommand.vi" Type="VI" URL="../VIs/EXA_salEvent_internalCommand.vi"/>
+	<Item Name="EXA_salEvent_loopTimeOutOfRange.vi" Type="VI" URL="../VIs/EXA_salEvent_loopTimeOutOfRange.vi"/>
+	<Item Name="EXA_salEvent_rejectedCommand.vi" Type="VI" URL="../VIs/EXA_salEvent_rejectedCommand.vi"/>
+	<Item Name="EXA_salEvent_settingVersions.vi" Type="VI" URL="../VIs/EXA_salEvent_settingVersions.vi"/>
+	<Item Name="EXA_salEvent_summaryState.vi" Type="VI" URL="../VIs/EXA_salEvent_summaryState.vi"/>
 	<Item Name="EXA_salProcessor_disable.vi" Type="VI" URL="../VIs/EXA_salProcessor_disable.vi"/>
 	<Item Name="EXA_salProcessor_enable.vi" Type="VI" URL="../VIs/EXA_salProcessor_enable.vi"/>
 	<Item Name="EXA_salProcessor_enterControl.vi" Type="VI" URL="../VIs/EXA_salProcessor_enterControl.vi"/>
 	<Item Name="EXA_salProcessor_exitControl.vi" Type="VI" URL="../VIs/EXA_salProcessor_exitControl.vi"/>
 	<Item Name="EXA_salProcessor_standby.vi" Type="VI" URL="../VIs/EXA_salProcessor_standby.vi"/>
 	<Item Name="EXA_salProcessor_start.vi" Type="VI" URL="../VIs/EXA_salProcessor_start.vi"/>
-	<Item Name="EXA_salTelemetrySub_LoopTimems.vi" Type="VI" URL="../VIs/EXA_salTelemetrySub_LoopTimems.vi"/>
-	<Item Name="EXA_salTelemetrySub_Timestamp.vi" Type="VI" URL="../VIs/EXA_salTelemetrySub_Timestamp.vi"/>
+	<Item Name="EXA_salTelemetrySub_loopTimeMs.vi" Type="VI" URL="../VIs/EXA_salTelemetrySub_loopTimeMs.vi"/>
+	<Item Name="EXA_salTelemetrySub_timestamp.vi" Type="VI" URL="../VIs/EXA_salTelemetrySub_timestamp.vi"/>
 	<Item Name="EXA_waitForCompletion_disable.vi" Type="VI" URL="../VIs/EXA_waitForCompletion_disable.vi"/>
 	<Item Name="EXA_waitForCompletion_enable.vi" Type="VI" URL="../VIs/EXA_waitForCompletion_enable.vi"/>
 	<Item Name="EXA_waitForCompletion_enterControl.vi" Type="VI" URL="../VIs/EXA_waitForCompletion_enterControl.vi"/>
