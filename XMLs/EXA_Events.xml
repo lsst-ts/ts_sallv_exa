@@ -7,7 +7,7 @@
 
 <SALEvent>
     <Subsystem>EXA</Subsystem>
-    <Version>3.5.2</Version>
+    <Version>3.7.1</Version>
     <Author></Author>
     <EFDB_Topic>EXA_logevent_appliedSettingsMatchStart</EFDB_Topic>
     <Alias>appliedSettingsMatchStart</Alias>
@@ -22,7 +22,7 @@
 </SALEvent>
 <SALEvent>
     <Subsystem>EXA</Subsystem>
-    <Version>3.5.2</Version>
+    <Version>3.7.1</Version>
     <Author></Author>
     <EFDB_Topic>EXA_logevent_errorCode</EFDB_Topic>
     <Alias>errorCode</Alias>
@@ -37,7 +37,7 @@
 </SALEvent>
 <SALEvent>
     <Subsystem>EXA</Subsystem>
-    <Version>3.5.2</Version>
+    <Version>3.7.1</Version>
     <Author></Author>
     <EFDB_Topic>EXA_logevent_settingVersions</EFDB_Topic>
     <Alias>settingVersions</Alias>
@@ -61,7 +61,7 @@
 </SALEvent>
 <SALEvent>
     <Subsystem>EXA</Subsystem>
-    <Version>3.5.2</Version>
+    <Version>3.7.1</Version>
     <Author></Author>
     <EFDB_Topic>EXA_logevent_summaryState</EFDB_Topic>
     <Alias>summaryState</Alias>
@@ -78,7 +78,7 @@
 </SALEvent>
 <SALEvent>
     <Subsystem>EXA</Subsystem>
-    <Version>3.5.2</Version>
+    <Version>3.7.1</Version>
     <Author></Author>
     <EFDB_Topic>EXA_logevent_detailedState</EFDB_Topic>
     <Alias>detailedState</Alias>
@@ -95,7 +95,7 @@
 </SALEvent>
 <SALEvent>
     <Subsystem>EXA</Subsystem>
-    <Version>3.5.2</Version>
+    <Version>3.7.1</Version>
     <Author></Author>
     <EFDB_Topic>EXA_logevent_internalCommand</EFDB_Topic>
     <Alias>internalCommand</Alias>
@@ -110,7 +110,7 @@
 </SALEvent>
 <SALEvent>
     <Subsystem>EXA</Subsystem>
-    <Version>3.5.2</Version>
+    <Version>3.7.1</Version>
     <Author></Author>
     <EFDB_Topic>EXA_logevent_heartbeat</EFDB_Topic>
     <Alias>heartbeat</Alias>
@@ -125,7 +125,7 @@
 </SALEvent>
 <SALEvent>
     <Subsystem>EXA</Subsystem>
-    <Version>3.5.2</Version>
+    <Version>3.7.1</Version>
     <Author></Author>
     <EFDB_Topic>EXA_logevent_loopTimeOutOfRange</EFDB_Topic>
     <Alias>loopTimeOutOfRange</Alias>
@@ -140,7 +140,7 @@
 </SALEvent>
 <SALEvent>
     <Subsystem>EXA</Subsystem>
-    <Version>3.5.2</Version>
+    <Version>3.7.1</Version>
     <Author></Author>
     <EFDB_Topic>EXA_logevent_rejectedCommand</EFDB_Topic>
     <Alias>rejectedCommand</Alias>
