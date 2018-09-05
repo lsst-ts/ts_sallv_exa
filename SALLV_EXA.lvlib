@@ -5,15 +5,15 @@
 	<Property Name="NI.Lib.Version" Type="Str">1.0.0.0</Property>
 	<Item Name="DataTypes" Type="Folder">
 		<Item Name=".ctl" Type="VI" URL="../DataTypes/.ctl"/>
-		<Item Name="DetailedState.ctl" Type="VI" URL="../DataTypes/DetailedState.ctl"/>
-		<Item Name="SummaryState.ctl" Type="VI" URL="../DataTypes/SummaryState.ctl"/>
 		<Item Name="ackcmd.ctl" Type="VI" URL="../DataTypes/ackcmd.ctl"/>
 		<Item Name="command.ctl" Type="VI" URL="../DataTypes/command.ctl"/>
 		<Item Name="command_disable.ctl" Type="VI" URL="../DataTypes/command_disable.ctl"/>
 		<Item Name="command_enable.ctl" Type="VI" URL="../DataTypes/command_enable.ctl"/>
+		<Item Name="command_enterControl.ctl" Type="VI" URL="../DataTypes/command_enterControl.ctl"/>
 		<Item Name="command_exitControl.ctl" Type="VI" URL="../DataTypes/command_exitControl.ctl"/>
 		<Item Name="command_standby.ctl" Type="VI" URL="../DataTypes/command_standby.ctl"/>
 		<Item Name="command_start.ctl" Type="VI" URL="../DataTypes/command_start.ctl"/>
+		<Item Name="detailedState.ctl" Type="VI" URL="../DataTypes/detailedState.ctl"/>
 		<Item Name="logevent.ctl" Type="VI" URL="../DataTypes/logevent.ctl"/>
 		<Item Name="logevent_appliedSettingsMatchStart.ctl" Type="VI" URL="../DataTypes/logevent_appliedSettingsMatchStart.ctl"/>
 		<Item Name="logevent_detailedState.ctl" Type="VI" URL="../DataTypes/logevent_detailedState.ctl"/>
@@ -25,6 +25,7 @@
 		<Item Name="logevent_settingVersions.ctl" Type="VI" URL="../DataTypes/logevent_settingVersions.ctl"/>
 		<Item Name="logevent_summaryState.ctl" Type="VI" URL="../DataTypes/logevent_summaryState.ctl"/>
 		<Item Name="loopTime.ctl" Type="VI" URL="../DataTypes/loopTime.ctl"/>
+		<Item Name="summaryState.ctl" Type="VI" URL="../DataTypes/summaryState.ctl"/>
 		<Item Name="timestamp.ctl" Type="VI" URL="../DataTypes/timestamp.ctl"/>
 	</Item>
 	<Item Name="subvi" Type="Folder">
@@ -34,11 +35,13 @@
 	<Item Name="EXA_Release.vi" Type="VI" URL="../VIs/EXA_Release.vi"/>
 	<Item Name="EXA_acceptCommand_disable.vi" Type="VI" URL="../VIs/EXA_acceptCommand_disable.vi"/>
 	<Item Name="EXA_acceptCommand_enable.vi" Type="VI" URL="../VIs/EXA_acceptCommand_enable.vi"/>
+	<Item Name="EXA_acceptCommand_enterControl.vi" Type="VI" URL="../VIs/EXA_acceptCommand_enterControl.vi"/>
 	<Item Name="EXA_acceptCommand_exitControl.vi" Type="VI" URL="../VIs/EXA_acceptCommand_exitControl.vi"/>
 	<Item Name="EXA_acceptCommand_standby.vi" Type="VI" URL="../VIs/EXA_acceptCommand_standby.vi"/>
 	<Item Name="EXA_acceptCommand_start.vi" Type="VI" URL="../VIs/EXA_acceptCommand_start.vi"/>
 	<Item Name="EXA_ackCommand_disable.vi" Type="VI" URL="../VIs/EXA_ackCommand_disable.vi"/>
 	<Item Name="EXA_ackCommand_enable.vi" Type="VI" URL="../VIs/EXA_ackCommand_enable.vi"/>
+	<Item Name="EXA_ackCommand_enterControl.vi" Type="VI" URL="../VIs/EXA_ackCommand_enterControl.vi"/>
 	<Item Name="EXA_ackCommand_exitControl.vi" Type="VI" URL="../VIs/EXA_ackCommand_exitControl.vi"/>
 	<Item Name="EXA_ackCommand_standby.vi" Type="VI" URL="../VIs/EXA_ackCommand_standby.vi"/>
 	<Item Name="EXA_ackCommand_start.vi" Type="VI" URL="../VIs/EXA_ackCommand_start.vi"/>
@@ -48,6 +51,8 @@
 	<Item Name="EXA_cancelCallback_command_disableackcmd.vi" Type="VI" URL="../VIs/EXA_cancelCallback_command_disableackcmd.vi"/>
 	<Item Name="EXA_cancelCallback_command_enable.vi" Type="VI" URL="../VIs/EXA_cancelCallback_command_enable.vi"/>
 	<Item Name="EXA_cancelCallback_command_enableackcmd.vi" Type="VI" URL="../VIs/EXA_cancelCallback_command_enableackcmd.vi"/>
+	<Item Name="EXA_cancelCallback_command_enterControl.vi" Type="VI" URL="../VIs/EXA_cancelCallback_command_enterControl.vi"/>
+	<Item Name="EXA_cancelCallback_command_enterControlackcmd.vi" Type="VI" URL="../VIs/EXA_cancelCallback_command_enterControlackcmd.vi"/>
 	<Item Name="EXA_cancelCallback_command_exitControl.vi" Type="VI" URL="../VIs/EXA_cancelCallback_command_exitControl.vi"/>
 	<Item Name="EXA_cancelCallback_command_exitControlackcmd.vi" Type="VI" URL="../VIs/EXA_cancelCallback_command_exitControlackcmd.vi"/>
 	<Item Name="EXA_cancelCallback_command_standby.vi" Type="VI" URL="../VIs/EXA_cancelCallback_command_standby.vi"/>
@@ -90,6 +95,7 @@
 	<Item Name="EXA_getNextSample_timestamp.vi" Type="VI" URL="../VIs/EXA_getNextSample_timestamp.vi"/>
 	<Item Name="EXA_getResponse_disable.vi" Type="VI" URL="../VIs/EXA_getResponse_disable.vi"/>
 	<Item Name="EXA_getResponse_enable.vi" Type="VI" URL="../VIs/EXA_getResponse_enable.vi"/>
+	<Item Name="EXA_getResponse_enterControl.vi" Type="VI" URL="../VIs/EXA_getResponse_enterControl.vi"/>
 	<Item Name="EXA_getResponse_exitControl.vi" Type="VI" URL="../VIs/EXA_getResponse_exitControl.vi"/>
 	<Item Name="EXA_getResponse_standby.vi" Type="VI" URL="../VIs/EXA_getResponse_standby.vi"/>
 	<Item Name="EXA_getResponse_start.vi" Type="VI" URL="../VIs/EXA_getResponse_start.vi"/>
@@ -97,6 +103,7 @@
 	<Item Name="EXA_getSample_timestamp.vi" Type="VI" URL="../VIs/EXA_getSample_timestamp.vi"/>
 	<Item Name="EXA_issueCommand_disable.vi" Type="VI" URL="../VIs/EXA_issueCommand_disable.vi"/>
 	<Item Name="EXA_issueCommand_enable.vi" Type="VI" URL="../VIs/EXA_issueCommand_enable.vi"/>
+	<Item Name="EXA_issueCommand_enterControl.vi" Type="VI" URL="../VIs/EXA_issueCommand_enterControl.vi"/>
 	<Item Name="EXA_issueCommand_exitControl.vi" Type="VI" URL="../VIs/EXA_issueCommand_exitControl.vi"/>
 	<Item Name="EXA_issueCommand_standby.vi" Type="VI" URL="../VIs/EXA_issueCommand_standby.vi"/>
 	<Item Name="EXA_issueCommand_start.vi" Type="VI" URL="../VIs/EXA_issueCommand_start.vi"/>
@@ -111,6 +118,7 @@
 	<Item Name="EXA_logEvent_summaryState.vi" Type="VI" URL="../VIs/EXA_logEvent_summaryState.vi"/>
 	<Item Name="EXA_monitorCommand_disable.vi" Type="VI" URL="../VIs/EXA_monitorCommand_disable.vi"/>
 	<Item Name="EXA_monitorCommand_enable.vi" Type="VI" URL="../VIs/EXA_monitorCommand_enable.vi"/>
+	<Item Name="EXA_monitorCommand_enterControl.vi" Type="VI" URL="../VIs/EXA_monitorCommand_enterControl.vi"/>
 	<Item Name="EXA_monitorCommand_exitControl.vi" Type="VI" URL="../VIs/EXA_monitorCommand_exitControl.vi"/>
 	<Item Name="EXA_monitorCommand_standby.vi" Type="VI" URL="../VIs/EXA_monitorCommand_standby.vi"/>
 	<Item Name="EXA_monitorCommand_start.vi" Type="VI" URL="../VIs/EXA_monitorCommand_start.vi"/>
@@ -122,6 +130,8 @@
 	<Item Name="EXA_registerCallback_command_disableackcmd.vi" Type="VI" URL="../VIs/EXA_registerCallback_command_disableackcmd.vi"/>
 	<Item Name="EXA_registerCallback_command_enable.vi" Type="VI" URL="../VIs/EXA_registerCallback_command_enable.vi"/>
 	<Item Name="EXA_registerCallback_command_enableackcmd.vi" Type="VI" URL="../VIs/EXA_registerCallback_command_enableackcmd.vi"/>
+	<Item Name="EXA_registerCallback_command_enterControl.vi" Type="VI" URL="../VIs/EXA_registerCallback_command_enterControl.vi"/>
+	<Item Name="EXA_registerCallback_command_enterControlackcmd.vi" Type="VI" URL="../VIs/EXA_registerCallback_command_enterControlackcmd.vi"/>
 	<Item Name="EXA_registerCallback_command_exitControl.vi" Type="VI" URL="../VIs/EXA_registerCallback_command_exitControl.vi"/>
 	<Item Name="EXA_registerCallback_command_exitControlackcmd.vi" Type="VI" URL="../VIs/EXA_registerCallback_command_exitControlackcmd.vi"/>
 	<Item Name="EXA_registerCallback_command_standby.vi" Type="VI" URL="../VIs/EXA_registerCallback_command_standby.vi"/>
@@ -142,6 +152,7 @@
 	<Item Name="EXA_registerCallback_timestamp.vi" Type="VI" URL="../VIs/EXA_registerCallback_timestamp.vi"/>
 	<Item Name="EXA_salCommander_disable.vi" Type="VI" URL="../VIs/EXA_salCommander_disable.vi"/>
 	<Item Name="EXA_salCommander_enable.vi" Type="VI" URL="../VIs/EXA_salCommander_enable.vi"/>
+	<Item Name="EXA_salCommander_enterControl.vi" Type="VI" URL="../VIs/EXA_salCommander_enterControl.vi"/>
 	<Item Name="EXA_salCommander_exitControl.vi" Type="VI" URL="../VIs/EXA_salCommander_exitControl.vi"/>
 	<Item Name="EXA_salCommander_standby.vi" Type="VI" URL="../VIs/EXA_salCommander_standby.vi"/>
 	<Item Name="EXA_salCommander_start.vi" Type="VI" URL="../VIs/EXA_salCommander_start.vi"/>
@@ -156,6 +167,7 @@
 	<Item Name="EXA_salEvent_summaryState.vi" Type="VI" URL="../VIs/EXA_salEvent_summaryState.vi"/>
 	<Item Name="EXA_salProcessor_disable.vi" Type="VI" URL="../VIs/EXA_salProcessor_disable.vi"/>
 	<Item Name="EXA_salProcessor_enable.vi" Type="VI" URL="../VIs/EXA_salProcessor_enable.vi"/>
+	<Item Name="EXA_salProcessor_enterControl.vi" Type="VI" URL="../VIs/EXA_salProcessor_enterControl.vi"/>
 	<Item Name="EXA_salProcessor_exitControl.vi" Type="VI" URL="../VIs/EXA_salProcessor_exitControl.vi"/>
 	<Item Name="EXA_salProcessor_standby.vi" Type="VI" URL="../VIs/EXA_salProcessor_standby.vi"/>
 	<Item Name="EXA_salProcessor_start.vi" Type="VI" URL="../VIs/EXA_salProcessor_start.vi"/>
@@ -163,6 +175,7 @@
 	<Item Name="EXA_salTelemetrySub_timestamp.vi" Type="VI" URL="../VIs/EXA_salTelemetrySub_timestamp.vi"/>
 	<Item Name="EXA_waitForCompletion_disable.vi" Type="VI" URL="../VIs/EXA_waitForCompletion_disable.vi"/>
 	<Item Name="EXA_waitForCompletion_enable.vi" Type="VI" URL="../VIs/EXA_waitForCompletion_enable.vi"/>
+	<Item Name="EXA_waitForCompletion_enterControl.vi" Type="VI" URL="../VIs/EXA_waitForCompletion_enterControl.vi"/>
 	<Item Name="EXA_waitForCompletion_exitControl.vi" Type="VI" URL="../VIs/EXA_waitForCompletion_exitControl.vi"/>
 	<Item Name="EXA_waitForCompletion_standby.vi" Type="VI" URL="../VIs/EXA_waitForCompletion_standby.vi"/>
 	<Item Name="EXA_waitForCompletion_start.vi" Type="VI" URL="../VIs/EXA_waitForCompletion_start.vi"/>
