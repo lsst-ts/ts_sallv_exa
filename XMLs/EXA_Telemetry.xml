@@ -22,7 +22,15 @@
     <EFDB_Topic>EXA_loopTime</EFDB_Topic>
     <item>
         <EFDB_Name>loopTime</EFDB_Name>
-        <Description>The actual loop time is ms.
+        <Description>
+  <head>
+		<style>
+			p {padding:0px; margin:0px;}
+		</style>
+	</head>
+  <body>
+    The actual loop time is milliseconds.
+</body>
 </Description>
         <IDL_Type>double</IDL_Type>
         <Units></Units>
