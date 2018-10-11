@@ -3,8 +3,10 @@
 	<Property Name="NI.Lib.Icon" Type="Bin">&amp;A#!!!!!!!)!"1!&amp;!!!-!%!!!@````]!!!!"!!%!!!-R!!!*Q(C=\:20;BN*&amp;-;`B)':L7]1B%[1&gt;Y!19MA*L/6!%HA(;-&amp;Y&amp;U6E9;W3&lt;7IT!WWUM1[AB2'T$)D(J-H?2YCX!N-&gt;Z^?FMJQM`'?2A6F-F:_[[`N?P@JV&gt;&lt;GFX([4@N(F89X%;&gt;NOJ'[ET61Z7M1,*)XQB[/,)7UTH1\(UW'/C^&amp;QW0&lt;;F^Z@.5P;GMNKP&gt;T'^H:::X_Z\MBIS,DS]_$;:`*[V48.?O?PNT6X`GL&gt;ZT=\@^6]ZT.IFEWO=EE29L8M6D`-P[(6H`'LGPH(&gt;&gt;U&gt;V]?@[BR.8&gt;?@5*MPNT^`F@V*7^(GY\;;,+I=X)[Z6.PVKXH8666&lt;T3&gt;8@N5RO0;:P"BX&lt;&lt;P9_@.*6XXP4R:^@LPTRWV\\5^;2PVY-;&gt;)(Z/KG`QQ`Y;7H`]GH[L.&lt;@Z&gt;]``X\_&gt;P[JM&lt;`O&lt;T&lt;?U_`^ZP\ET[FZPU10W(C!AC%5[9?OMSU!-^U!-^U!-^I3@UB*\1%XJ#&gt;X2(&gt;X2(&gt;X2(.X2$.X2$.X2$TRV&gt;[%)8/LM3,"YM&amp;"1.#A4*I#DY#8A#HI!HY''IA#@A#8A#HI#(&amp;!5]!5`!%`!%0%R4Q"0Q"$Q"4]"$K5Q3O;0$%`"18AG?"%_#*]'4Y'&amp;**8A3!)H&amp;%I542="1QET=*(A30!E?&lt;J8A3@!E?")]#2ZM*8A30!G?"%_#BSFZ6V+G[4M[0*32Q_0Q/$Q/D].$;4E]$I`$Y`!Y0#QHB]@B=3#=":XC)-C:Z#1Y!Y@(Y?%CB]@B=8A=(I=(+\]BTTP4U`1&gt;(2[$R_!R?!Q?AY=3-HA-(I0(Y$&amp;Y+#O$R_!R?!Q?AY?F:0!90!;0!7)MSP)SCBE4D32$-(DYS[@&amp;]FN+G=2SF]LB64G5+I&gt;.Z2#J(![6F[\S-F6?EMLGKWSKSG;J&lt;),+Q[F!K]#I,+)SO5`5/&lt;^HR#FR1MS)1_+!W#='R&amp;Y`^3=HHJ_@[_TM4+?HJTIZ/&gt;&amp;M.N0BY;%/$A[UP\_PQ7#AP&lt;U^8&lt;6(^'V\=06&gt;?D=90JU^(D\\])&gt;`@0@\SY^PP\Y[?PP0K[-`XX&gt;(&lt;[2@`S)H_[/8T\0`OP&gt;@\(TC3&lt;H?+`J[@___3`_&amp;&lt;[-?;HP&gt;\&gt;%XUN,XX1!!!!!</Property>
 	<Property Name="NI.Lib.SourceVersion" Type="Int">369131520</Property>
 	<Property Name="NI.Lib.Version" Type="Str">1.0.0.0</Property>
+	<Property Name="NI.LV.All.SourceOnly" Type="Bool">true</Property>
 	<Item Name="DataTypes" Type="Folder">
 		<Item Name=".ctl" Type="VI" URL="../DataTypes/.ctl"/>
+		<Item Name="CommandValue.ctl" Type="VI" URL="../DataTypes/CommandValue.ctl"/>
 		<Item Name="DetailedState.ctl" Type="VI" URL="../DataTypes/DetailedState.ctl"/>
 		<Item Name="SummaryState.ctl" Type="VI" URL="../DataTypes/SummaryState.ctl"/>
 		<Item Name="ackcmd.ctl" Type="VI" URL="../DataTypes/ackcmd.ctl"/>
