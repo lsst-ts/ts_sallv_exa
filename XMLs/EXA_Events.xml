@@ -4,7 +4,6 @@
 	xsi:noNamespaceSchemaLocation="http://lsst-sal.tuc.noao.edu/schema/SALEventSet.xsd">
 <Enumeration>SummaryState_DisabledState,SummaryState_EnabledState,SummaryState_FaultState,SummaryState_OfflineState,SummaryState_StandbyState</Enumeration>
 <Enumeration>DetailedState_DisabledState,DetailedState_EnabledState,DetailedState_FaultState,DetailedState_OfflineState,DetailedState_StandbyState</Enumeration>
-<Enumeration>CommandValue_Disable,CommandValue_Enable,CommandValue_Exit,CommandValue_GoToStandby,CommandValue_OnElementCommand,CommandValue_OnElementEvent,CommandValue_OnHeartbeat,CommandValue_OnIncomingMessagingError,CommandValue_OnInterrupt,CommandValue_Start</Enumeration>
 
 <SALEvent>
     <Subsystem>EXA</Subsystem>
@@ -160,22 +159,22 @@
     <EFDB_Topic>EXA_logevent_rejectedCommand</EFDB_Topic>
     <Alias>rejectedCommand</Alias>
     <Explanation>http://sal.lsst.org</Explanation>
-            <item>
-                <EFDB_Name>commandValue</EFDB_Name>
-                <Description></Description>
-                <!-- Enumeration: CommandValue -->
-                <IDL_Type>long</IDL_Type>
-                <Units></Units>
-                <Count>1</Count>
-            </item>
-            <item>
-                <EFDB_Name>detailedState</EFDB_Name>
-                <Description></Description>
-                <!-- Enumeration: DetailedState -->
-                <IDL_Type>long</IDL_Type>
-                <Units></Units>
-                <Count>1</Count>
-            </item>
+    <item>
+        <EFDB_Name>command</EFDB_Name>
+        <Description></Description>
+        <IDL_Type>string</IDL_Type>
+        <IDL_Size>1</IDL_Size>
+        <Units></Units>
+        <Count>1</Count>
+    </item>
+    <item>
+        <EFDB_Name>state</EFDB_Name>
+        <Description></Description>
+        <IDL_Type>string</IDL_Type>
+        <IDL_Size>1</IDL_Size>
+        <Units></Units>
+        <Count>1</Count>
+    </item>
     <item>
         <EFDB_Name>timestamp</EFDB_Name>
         <Description></Description>

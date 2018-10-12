@@ -6,7 +6,6 @@
 	<Property Name="NI.LV.All.SourceOnly" Type="Bool">true</Property>
 	<Item Name="DataTypes" Type="Folder">
 		<Item Name=".ctl" Type="VI" URL="../DataTypes/.ctl"/>
-		<Item Name="CommandValue.ctl" Type="VI" URL="../DataTypes/CommandValue.ctl"/>
 		<Item Name="DetailedState.ctl" Type="VI" URL="../DataTypes/DetailedState.ctl"/>
 		<Item Name="SummaryState.ctl" Type="VI" URL="../DataTypes/SummaryState.ctl"/>
 		<Item Name="ackcmd.ctl" Type="VI" URL="../DataTypes/ackcmd.ctl"/>
